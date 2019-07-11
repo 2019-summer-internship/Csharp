@@ -23,6 +23,9 @@ namespace PaperMarker
         public MainWindow()
         {
             InitializeComponent();
+            Console.WriteLine(
+                "姓名：安吉洛\n"+
+                "地址：优易数据大厦\n");
         }
     }
 }
