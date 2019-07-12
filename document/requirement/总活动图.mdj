@@ -1,7 +1,7 @@
 {
 	"_type": "Project",
 	"_id": "AAAAAAFF+h6SjaM2Hec=",
-	"name": "Untitled",
+	"name": "毕业答辩",
 	"ownedElements": [
 		{
 			"_type": "UMLModel",
@@ -9,7 +9,7 @@
 			"_parent": {
 				"$ref": "AAAAAAFF+h6SjaM2Hec="
 			},
-			"name": "Model",
+			"name": "不含系统的总活动图",
 			"ownedElements": [
 				{
 					"_type": "UMLClassDiagram",
@@ -2001,7 +2001,7 @@
 											"top": 36,
 											"width": 209,
 											"height": 13,
-											"text": "答辩委员会",
+											"text": "答辩秘书",
 											"verticalAlignment": 3
 										}
 									],
@@ -2272,7 +2272,7 @@
 													"top": -160,
 													"width": 103.27001953125,
 													"height": 13,
-													"text": "(from 答辩委员会)"
+													"text": "(from 答辩秘书)"
 												},
 												{
 													"_type": "LabelView",
@@ -5515,7 +5515,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFr4PiwIrY7YyQ="
 							},
-							"name": "答辩委员会",
+							"name": "答辩秘书",
 							"nodes": [
 								{
 									"_type": "UMLAction",
