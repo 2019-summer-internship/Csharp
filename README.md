@@ -1,4 +1,4 @@
-![thesing](https://github.com/2019-summer-internship/Csharp/blob/master/design/brand/logo/image/thesing-logo-h.png)
+![thesing](https://github.com/2019-summer-internship/Csharp/blob/master/design/brand/logo/image/thesing-logo-h-white.png)
 
 # thesing
 
