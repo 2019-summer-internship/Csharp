@@ -1,5 +1,5 @@
 # thesing
-![thesing](https://github.com/2019-summer-internship/Csharp/design/logo/image/thesing-logo.png)
+![thesing](https://github.com/2019-summer-internship/Csharp/blob/master/design/brand/logo/image/thesing-logo-h.png)
 
 ### 简介
 thesing是一个实现毕业设计网络化无纸化评阅的软件，学生可以从该软件中选题，提交文档，与指导老师交流；老师可以在该软件中查看学生的进度，指导学生的毕设进行。
