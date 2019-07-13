@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PaperMarker.Properties
+namespace thesing.Properties
 {
 
 
