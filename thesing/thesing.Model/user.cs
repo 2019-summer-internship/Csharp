@@ -9,7 +9,7 @@ namespace thesing.Model
         /// <summary>
         /// 用户编号
         /// </summary>
-        public String ID ;
+        public String ID;
         /// <summary>
         /// 用户姓名
         /// </summary>
@@ -19,9 +19,9 @@ namespace thesing.Model
         /// </summary>
         public String gender;
         /// <summary>
-        /// 
+        /// 密码
         /// </summary>
-        public String password;
+        private String password;
         /// <summary>
         /// 头像
         /// </summary>
@@ -38,8 +38,6 @@ namespace thesing.Model
         /// 邮箱号
         /// </summary>
         public String email;
-
-
 
     }
 }
