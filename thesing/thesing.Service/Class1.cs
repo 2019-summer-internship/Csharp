@@ -2,7 +2,7 @@
 
 namespace thesing.Service
 {
-    public class Class1
+    public class user
     {
     }
 }

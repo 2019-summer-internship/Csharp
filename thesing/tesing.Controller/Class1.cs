@@ -1,8 +1,11 @@
-﻿using System;
-
-namespace tesing.Controller
+﻿namespace tesing.Controller
 {
-    public class Class1
+    public class user
     {
+        private Model.user user;
+        void fun()
+        {
+            Controller.System.SendMail(user.id,  73498247,  "dijdoihedyqd98wqy");
+        }
     }
 }
