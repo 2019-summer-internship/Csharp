@@ -7,7 +7,7 @@ namespace thesing.Model
     /// <summary>
     /// 进度项模型
     /// </summary>
-    class Task
+    public class Task
     {
         /// <summary>
         /// 编号

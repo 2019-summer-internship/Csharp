@@ -21,9 +21,9 @@ namespace tesing.Controller
         /// <param name="key"></param>
         /// <param name="type"></param>
         /// <returns></returns>
-        public List<Model.School> SearchSchool(string key, string type)
+        public List<thesing.Model.School> SearchSchool(string key, string type)
         {
-            List<Model.School> result = new List<Model.School>();
+            List<thesing.Model.School> result = new List<thesing.Model.School>();
             return result;
         }
 
