@@ -4,35 +4,38 @@ using System;
 
 namespace thesing.Controller
 {
+    /// <summary>
+    /// 用户类
+    /// </summary>
     public class User
     {
         /// <summary>
-        /// 
+        /// 用户信息
         /// </summary>
-        public Model.User _user;
+        public Model.User info;
 
         /// <summary>
-        /// 
+        /// 操作者id
         /// </summary>
         private string operaterID;
 
         /// <summary>
-        /// 
+        /// 构造函数
         /// </summary>
         public User() { }
 
         /// <summary>
-        /// 
+        /// 更新信息
         /// </summary>
         /// <param name="tempUser"></param>
         /// <returns></returns>
-        public int UpdateInfo(Model.User tempUser)
+        public int UpdateInfo(Model.User newInfo)
         {
             return 0;
         }
 
         /// <summary>
-        /// 
+        /// 注销用户
         /// </summary>
         /// <returns></returns>
         public bool Destory()
@@ -41,7 +44,7 @@ namespace thesing.Controller
         }
 
         /// <summary>
-        /// 
+        /// 创建用户
         /// </summary>
         /// <returns></returns>
         public bool Create(Model.User tempUser)
@@ -50,7 +53,7 @@ namespace thesing.Controller
         }
 
         /// <summary>
-        /// 
+        /// 搜索通知
         /// </summary>
         /// <param name="key"></param>
         /// <param name="type"></param>
@@ -62,7 +65,7 @@ namespace thesing.Controller
         }
 
         /// <summary>
-        /// 
+        /// 将通知标记已读
         /// </summary>
         /// <param name="mails"></param>
         public bool FlagMailRead(List<string> mails)
@@ -71,7 +74,7 @@ namespace thesing.Controller
         }
 
         /// <summary>
-        /// 
+        /// 删除通知
         /// </summary>
         /// <param name="mails"></param>
         /// <returns></returns>
