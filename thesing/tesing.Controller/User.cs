@@ -58,9 +58,9 @@ namespace thesing.Controller
         /// <param name="key"></param>
         /// <param name="type"></param>
         /// <returns></returns>
-        public List<Mail> SearchMail(string key, string type)
+        public List<Model.Mail> SearchMail(string key, string type)
         {
-            List<Mail> result = new List<Mail>();
+            List<Model.Mail> result = new List<Model.Mail>();
             return result;
         }
 
