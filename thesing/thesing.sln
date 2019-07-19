@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thesing", "thesing\thesing.csproj", "{855A6701-7A46-4FAE-91FF-57F829537868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tesing.Controller", "tesing.Controller\tesing.Controller.csproj", "{D55BF6CA-0C66-40E9-936C-8EB1E7A675FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "thesing.Controller", "tesing.Controller\thesing.Controller.csproj", "{D55BF6CA-0C66-40E9-936C-8EB1E7A675FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thesing.Model", "thesing.Model\thesing.Model.csproj", "{3A8AD4E4-4DC3-43FA-9A16-8E06FB33C6F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "thesing.Model", "thesing.Model\thesing.Model.csproj", "{3A8AD4E4-4DC3-43FA-9A16-8E06FB33C6F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thesing.Service", "thesing.Service\thesing.Service.csproj", "{84222E2D-2CB5-44E8-AF81-8C0E4D0366C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "thesing.Service", "thesing.Service\thesing.Service.csproj", "{84222E2D-2CB5-44E8-AF81-8C0E4D0366C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

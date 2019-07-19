@@ -1,0 +1,66 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.0": {
+      "thesing.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/thesing.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/thesing.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "thesing.Model/1.0.0": {
+      "type": "project",
+      "path": "../thesing.Model/thesing.Model.csproj",
+      "msbuildProject": "../thesing.Model/thesing.Model.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.0": [
+      "thesing.Model >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\win10s\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\C#\\Csharp\\thesing\\tesing.Controller\\thesing.Controller.csproj",
+      "projectName": "thesing.Controller",
+      "projectPath": "E:\\C#\\Csharp\\thesing\\tesing.Controller\\thesing.Controller.csproj",
+      "packagesPath": "C:\\Users\\win10s\\.nuget\\packages\\",
+      "outputPath": "E:\\C#\\Csharp\\thesing\\tesing.Controller\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\win10s\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "projectReferences": {
+            "E:\\C#\\Csharp\\thesing\\thesing.Model\\thesing.Model.csproj": {
+              "projectPath": "E:\\C#\\Csharp\\thesing\\thesing.Model\\thesing.Model.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "netstandard2.0": {}
+    }
+  }
+}
