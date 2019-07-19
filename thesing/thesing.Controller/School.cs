@@ -1,14 +1,13 @@
-﻿using thesing.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace tesing.Controller
+namespace thesing.Controller
 {
     /// <summary>
     /// 学院类，继承自用户类
     /// </summary>
-    public class School:User
+    public class School : User
     {
         /// <summary>
         /// 学院信息
@@ -126,7 +125,7 @@ namespace tesing.Controller
         /// <param name="key"></param>
         /// <param name="type"></param>
         /// <returns></returns>
-        public List<Model.Recondiser> SearchReconsider(string key,string type)
+        public List<Model.Recondiser> SearchReconsider(string key, string type)
         {
             List<Model.Reconsider> result = new List<Model.Reconsider>();
             return result;
@@ -156,3 +155,4 @@ namespace tesing.Controller
 
     }
 }
+

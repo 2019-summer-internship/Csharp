@@ -1,9 +1,8 @@
-﻿using thesing.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace tesing.Controller
+namespace thesing.Controller
 {
     class System
     {
@@ -31,3 +30,4 @@ namespace tesing.Controller
         }
     }
 }
+

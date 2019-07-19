@@ -1,14 +1,13 @@
-﻿using thesing.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace tesing.Controller
+namespace thesing.Controller
 {
     /// <summary>
     /// 学生类，继承自用户类
     /// </summary>
-    public class Student:User
+    public class Student : User
     {
         /// <summary>
         /// 学生信息
@@ -57,7 +56,7 @@ namespace tesing.Controller
         /// </summary>
         /// <param name=""></param>
         /// <returns></returns>
-        public Boolean SendMessage(string file,string stage)
+        public Boolean SendMessage(string file, string stage)
         {
             return true;
         }
@@ -93,6 +92,6 @@ namespace tesing.Controller
         {
             return true;
         }
-        
+
     }
 }

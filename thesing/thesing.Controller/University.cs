@@ -1,14 +1,13 @@
-﻿using thesing.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace tesing.Controller
+namespace thesing.Controller
 {
     /// <summary>
     /// 校方类，继承自用户类
     /// </summary>
-    public class University:User
+    public class University : User
     {
         /// <summary>
         /// 校方信息
@@ -29,3 +28,4 @@ namespace tesing.Controller
 
     }
 }
+

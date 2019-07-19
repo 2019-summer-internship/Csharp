@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/thesing.Model.dll": {}
         }
+      },
+      "thesing.Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/thesing.Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/thesing.Service.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../thesing.Model/thesing.Model.csproj",
       "msbuildProject": "../thesing.Model/thesing.Model.csproj"
+    },
+    "thesing.Service/1.0.0": {
+      "type": "project",
+      "path": "../thesing.Service/thesing.Service.csproj",
+      "msbuildProject": "../thesing.Service/thesing.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "thesing.Model >= 1.0.0"
+      "thesing.Model >= 1.0.0",
+      "thesing.Service >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -32,11 +48,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\C#\\Csharp\\thesing\\tesing.Controller\\thesing.Controller.csproj",
+      "projectUniqueName": "E:\\C#\\Csharp\\thesing\\thesing.Controller\\thesing.Controller.csproj",
       "projectName": "thesing.Controller",
-      "projectPath": "E:\\C#\\Csharp\\thesing\\tesing.Controller\\thesing.Controller.csproj",
+      "projectPath": "E:\\C#\\Csharp\\thesing\\thesing.Controller\\thesing.Controller.csproj",
       "packagesPath": "C:\\Users\\win10s\\.nuget\\packages\\",
-      "outputPath": "E:\\C#\\Csharp\\thesing\\tesing.Controller\\obj\\",
+      "outputPath": "E:\\C#\\Csharp\\thesing\\thesing.Controller\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\win10s\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,6 +70,9 @@
           "projectReferences": {
             "E:\\C#\\Csharp\\thesing\\thesing.Model\\thesing.Model.csproj": {
               "projectPath": "E:\\C#\\Csharp\\thesing\\thesing.Model\\thesing.Model.csproj"
+            },
+            "E:\\C#\\Csharp\\thesing\\thesing.Service\\thesing.Service.csproj": {
+              "projectPath": "E:\\C#\\Csharp\\thesing\\thesing.Service\\thesing.Service.csproj"
             }
           }
         }

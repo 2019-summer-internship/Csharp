@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\thesing.Model\thesing.Model.csproj" />
+    <ProjectReference Include="..\thesing.Service\thesing.Service.csproj" />
   </ItemGroup>
 
 </Project>
