@@ -4,39 +4,59 @@ using System.Text;
 
 namespace thesing.Model
 {
+<<<<<<< HEAD
     class Student
     {/// <summary>
      /// 学号
      /// </summary>
         public String studentID;
+=======
+    /// <summary>
+    /// 学生模型
+    /// </summary>
+    class Student
+    {
+>>>>>>> 29b30b308d27e05266cc250f76ae5fa26fc364df
         /// <summary>
-        /// 成绩的对象
+        /// 学生id
         /// </summary>
-        public Achievement  achievement;
+        public string studentID;
+
         /// <summary>
-        /// 班级的集合
+        /// 成绩列表
         /// </summary>
-        public String Class;
+        public List<Achievement> achievement;
+
         /// <summary>
-        /// 专业的集合
+        /// 班级
         /// </summary>
-        public String major;
+        public string clas;
+
+        /// <summary>
+        /// 专业
+        /// </summary>
+        public string major;
+
         /// <summary>
         /// 学院
         /// </summary>
-        public String  school;
+        public string school;
+
         /// <summary>
         /// 我的题目
         /// </summary>
         public Project project;
+
         /// <summary>
         /// 我的老师
         /// </summary>
-        public Teacher teacher;
+        public string teacher;
+
         /// <summary>
         /// 我的进度
         /// </summary>
         public List<Task> process;
+
         /// <summary>
         /// 通知的集合
         /// </summary>

@@ -5,34 +5,33 @@ using System.Text;
 namespace thesing.Model
 {
     /// <summary>
-    /// 进度项模型
+    /// 成绩组成项模型
     /// </summary>
-    class Task
+    class Consititution
     {
         /// <summary>
-        /// 编号
-        /// </summary>
-        public string number;
-
-        /// <summary>
-        /// 任务名称
+        /// 成绩组成项名称
         /// </summary>
         public string name;
 
         /// <summary>
-        /// 标签
+        /// 组成项占比
         /// </summary>
-        public string label;
+        public float rate;
 
         /// <summary>
-        /// 完成时间
+        /// 得分
+        /// </summary>
+        public float score;
+
+        /// <summary>
+        /// 评阅人
+        /// </summary>
+        public string teacher;
+
+        /// <summary>
+        /// 评阅时间
         /// </summary>
         public string time;
-
-        /// <summary>
-        /// 状态--0：还没开始 TODO，1：正在进行 DOING，2：已完成 DONE
-        /// </summary>
-        public string statu;
-
     }
 }

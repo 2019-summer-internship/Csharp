@@ -5,48 +5,150 @@ using System.Text;
 
 namespace tesing.Controller
 {
-    class School:User
+    /// <summary>
+    /// 学院类，继承自用户类
+    /// </summary>
+    public class School:User
     {
-        public thesing.Model.School school;
+        /// <summary>
+        /// 学院信息
+        /// </summary>
+        public thesing.Model.School info;
+
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        public School() { }
+
+        /// <summary>
+        /// 新建日程
+        /// </summary>
+        /// <param name="shedule"></param>
+        /// <returns></returns>
         public Boolean AddShedule(Shedule shedule)
         {
             return true;
         }
-        public Boolean UpdateShedule(Shedule shedule)
+
+        /// <summary>
+        /// 更新日程信息
+        /// </summary>
+        /// <param name="shedule"></param>
+        /// <returns></returns>
+        public Boolean UpdateShedule(string schedule, Schedule newInfo)
         {
             return true;
         }
-        public Boolean DestoryShedule(string shedule)
+
+        /// <summary>
+        /// 删除日程
+        /// </summary>
+        /// <param name="schedule"></param>
+        /// <returns></returns>
+        public Boolean DestorySchedule(string schedule)
         {
             return true;
 
         }
-        public Array<Shedule> ShowSheduleHistory(string key, string type)
+
+        /// <summary>
+        /// 显示历史发布日程
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public List<Model.Schedule> ShowScheduleHistory(string key, string type)
         {
+            List<Model.Schedule> result = new List<Model.Schedule>();
+            return result;
         }
+
+        /// <summary>
+        /// 搜索导师
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public List<Model.Teacher> SearchTeacher(string key, string type)
+        {
+            List<Model.Teacher> result = new List<Model.Teacher>();
+            return result;
+        }
+
+        /// <summary>
+        /// 分配名额
+        /// </summary>
+        /// <param name="teacher"></param>
+        /// <param name="count"></param>
+        /// <returns></returns>
         public Boolean Allocation(string teacher, int count)
         {
             return true;
         }
-        public Array<Project> SearchUncheckProject(String key, string type)
+
+        /// <summary>
+        /// 搜索未通过审核题目
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public List<Model.Project> SearchUncheckProject(String key, string type)
         {
+            List<Model.Project> result = new List<MOdel.Project>();
+            return result;
         }
+
+        /// <summary>
+        /// 通过题目审核
+        /// </summary>
+        /// <param name="project"></param>
+        /// <param name="feedbake"></param>
+        /// <returns></returns>
         public Boolean PassProjiect(string project, string feedbake)
         {
             return true;
         }
-        public Boolean RejiectProjiect(string project, string feedbake)
+
+        /// <summary>
+        /// 驳回题目审核申请
+        /// </summary>
+        /// <param name="project"></param>
+        /// <param name="feedbake"></param>
+        /// <returns></returns>
+        public Boolean RejectProjiect(string project, string feedbake)
         {
             return true;
         }
-        public Array<Recondiser> SearchReconsider(string key,string type)
-        {
 
-        }
-        public Boolean RejiectReconsider(string reconder, string feedbake)
+        /// <summary>
+        /// 搜索复议
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public List<Model.Recondiser> SearchReconsider(string key,string type)
         {
-
+            List<Model.Reconsider> result = new List<Model.Reconsider>();
+            return result;
         }
+
+        /// <summary>
+        /// 驳回复议
+        /// </summary>
+        /// <param name="reconder"></param>
+        /// <param name="feedbake"></param>
+        /// <returns></returns>
+        public Boolean RejectReconsider(string reconsider, string feedbake)
+        {
+            return true;
+        }
+
+        /// <summary>
+        /// 接受复议
+        /// </summary>
+        /// <param name="reconsider"></param>
+        /// <param name="feedback"></param>
+        /// <returns></returns>
         public Boolean AcceptReconsider(string reconsider, string feedback)
         {
             return true;

@@ -4,23 +4,30 @@ using System.Text;
 
 namespace thesing.Model
 {
+    /// <summary>
+    /// 校方模型
+    /// </summary>
     public class University
-    {/// <summary>
-     /// 学校编号
-     /// </summary>
-        public String number;
+    {
+        /// <summary>
+        /// 学校编号
+        /// </summary>
+        public string number;
+
         /// <summary>
         /// 学校名字
         /// </summary>
-        public String name;
+        public string name;
+
         /// <summary>
         /// 学院的集合
         /// </summary>
-        public String schools;
+        public List<School> schools;
+
         /// <summary>
         /// 通知的集合
         /// </summary>
-        public String mail;
+        public List<Mail> mail;
 
     }
 }

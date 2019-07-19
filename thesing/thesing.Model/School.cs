@@ -4,34 +4,44 @@ using System.Text;
 
 namespace thesing.Model
 {
+    /// <summary>
+    /// 学院模型
+    /// </summary>
     public class School
-    {/// <summary>
-     /// 学院编号
-     /// </summary>
-        public String number;
+    {
+        /// <summary>
+        /// 学院编号
+        /// </summary>
+        private string number;
+
         /// <summary>
         /// 学院名称
         /// </summary>
-        public String name;
+        public string name;
+
         /// <summary>
         /// 日程安排的集合
         /// </summary>
-        public String schedule;
+        public List<Schedule> schedule;
+
         /// <summary>
         /// 教师的集合
         /// </summary>
-        public String theachers;
+        public List<Teacher> theachers;
+
         /// <summary>
         /// 复议的集合
         /// </summary>
-        public String judgments;
+        public List<Reconsider> reconsider;
+
+        /// <summary>
+        /// 题目审核
+        /// </summary>
+        public List<Project> uncheckProject;
+
         /// <summary>
         /// 通知的集合
         /// </summary>
-        public String reconsideration;
-        /// <summary>
-        /// 通知的集合
-        /// </summary>
-        public String mail;
+        public List<Mail> mail;
     }
 }
