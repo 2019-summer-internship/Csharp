@@ -4,29 +4,33 @@ using System;
 
 namespace thesing.Controller
 {
-    public class user
+    public class User
     {
-        
         /// <summary>
         /// 
         /// </summary>
         public Model.User _user;
+
         /// <summary>
         /// 
         /// </summary>
-        
         private string operaterID;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public User() { }
+
         /// <summary>
         /// 
         /// </summary>
         /// <param name="tempUser"></param>
         /// <returns></returns>
-        /// 
-        public user() { }
         public int UpdateInfo(Model.User tempUser)
         {
             return 0;
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -35,14 +39,16 @@ namespace thesing.Controller
         {
             return false;
         }
+
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
-        public bool Creat()
+        public bool Create(Model.User tempUser)
         {
             return true;
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -54,6 +60,7 @@ namespace thesing.Controller
             List<Mail> result = new List<Mail>();
             return result;
         }
+
         /// <summary>
         /// 
         /// </summary>
@@ -62,6 +69,12 @@ namespace thesing.Controller
         {
             return true;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="mails"></param>
+        /// <returns></returns>
         public Boolean DestoryMail(List<string> mails)
         {
             return true;

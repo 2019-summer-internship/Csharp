@@ -6,27 +6,32 @@ using System.Text;
 namespace tesing.Controller
 {
     /// <summary>
-    /// 
+    /// 学生类
     /// </summary>
     class Student:User
     {
         /// <summary>
-        /// 
+        /// 学生信息
         /// </summary>
-        public thesing.Model.Student Contrallstudent;
+        public thesing.Model.Student info;
 
         /// <summary>
-        /// 
+        /// 构造函数
+        /// </summary>
+        public Student() { }
+
+        /// <summary>
+        /// 选择题目
         /// </summary>
         /// <param name="project"></param>
         /// <returns></returns>
-        public Student() { }
-        public Boolean ChooseProjiect(string project)
+        public Boolean ChooseProject(string project)
         {
             return true;
         }
+
         /// <summary>
-        /// 
+        /// 搜索题目
         /// </summary>
         /// <param name="key"></param>
         /// <param name="type"></param>
@@ -36,8 +41,9 @@ namespace tesing.Controller
             List<Project> result = new List<Project>();
             return result;
         }
+
         /// <summary>
-        /// 
+        /// 发送纯文本消息
         /// </summary>
         /// <param name="text"></param>
         /// <returns></returns>
@@ -45,8 +51,9 @@ namespace tesing.Controller
         {
             return true;
         }
+
         /// <summary>
-        /// 
+        /// 发送文件消息
         /// </summary>
         /// <param name=""></param>
         /// <returns></returns>
@@ -54,23 +61,35 @@ namespace tesing.Controller
         {
             return true;
         }
+
         /// <summary>
-        /// 
+        /// 发送图片消息
+        /// </summary>
+        /// <param name=""></param>
+        /// <returns></returns>
+        public Boolean SendMessage(string image)
+        {
+            return true;
+        }
+
+        /// <summary>
+        /// 上传进度任务文件
         /// </summary>
         /// <param name="file"></param>
         /// <param name="satge"></param>
         /// <returns></returns>
-        public Boolean AddFile(string file, string satge)
+        public Boolean AddTaskFile(string task, string file, string satge)
         {
             return false;
         }
+
         /// <summary>
-        /// 
+        /// 成绩复议
         /// </summary>
         /// <param name="stage"></param>
         /// <param name="reason"></param>
         /// <returns></returns>
-        public Boolean AchievementReconsider(string stage, string reason)
+        public Boolean AchievementReconsider(string constitution, string reason)
         {
             return true;
         }

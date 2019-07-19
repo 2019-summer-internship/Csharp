@@ -4,22 +4,19 @@ using System.Text;
 
 namespace thesing.Model
 {
-    /// <summary>
-    /// 
-    /// </summary>
-    public class Student
+    class Student
     {/// <summary>
      /// 学号
      /// </summary>
         public String studentID;
         /// <summary>
-        /// 成绩的对象
+        /// 成绩
         /// </summary>
-        public Achievement  achievement;
+        public String achievement;
         /// <summary>
         /// 班级的集合
         /// </summary>
-        public String Class;
+        public String clas;
         /// <summary>
         /// 专业的集合
         /// </summary>
@@ -27,22 +24,22 @@ namespace thesing.Model
         /// <summary>
         /// 学院
         /// </summary>
-        public String  school;
+        public String school;
         /// <summary>
         /// 我的题目
         /// </summary>
-        public Project project;
+        public String project;
         /// <summary>
         /// 我的老师
         /// </summary>
-        public Teacher teacher;
+        public String teacher;
         /// <summary>
         /// 我的进度
         /// </summary>
-        public List<Task> process;
+        public String process;
         /// <summary>
         /// 通知的集合
         /// </summary>
-        public List<Mail> mail;
+        public String mail;
     }
 }
