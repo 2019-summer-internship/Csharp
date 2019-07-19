@@ -4,7 +4,7 @@ using System.Text;
 
 namespace thesing.Model
 {
-    class Project
+    public class Project
     {/// <summary>
      /// 题目编号
      /// </summary>

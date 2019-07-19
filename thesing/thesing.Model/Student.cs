@@ -4,7 +4,10 @@ using System.Text;
 
 namespace thesing.Model
 {
-    class Student
+    /// <summary>
+    /// 
+    /// </summary>
+    public class Student
     {/// <summary>
      /// 学号
      /// </summary>
