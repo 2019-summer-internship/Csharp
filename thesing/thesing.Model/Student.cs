@@ -12,13 +12,7 @@ namespace thesing.Model
         /// <summary>
         /// 学生id
         /// </summary>
-        public string studentID;
-
-        /// <summary>
-        /// 学生模型
-        /// </summary>
-        class Student
-        {
+      
 
             /// <summary>
             /// 学生id
@@ -46,6 +40,7 @@ namespace thesing.Model
             public string school;
 
             /// <summary>
+            /// <summary>
             /// 我的题目
             /// </summary>
             public Project project;
@@ -64,6 +59,6 @@ namespace thesing.Model
             /// 通知的集合
             /// </summary>
             public List<Mail> mail;
-        }
+        
     }
 }
