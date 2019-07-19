@@ -7,7 +7,7 @@ namespace thesing.Model
     /// <summary>
     /// 消息模型
     /// </summary>
-    class Message
+    public class Message
     {
         /// <summary>
         /// 消息编号
@@ -58,6 +58,8 @@ namespace thesing.Model
         /// 阶段标签
         /// </summary>
         public string label;
+
+        public Message() { }
 
     }
 }

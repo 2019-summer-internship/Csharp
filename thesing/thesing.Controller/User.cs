@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Int32;
 
 namespace thesing.Controller
 {
@@ -18,7 +17,7 @@ namespace thesing.Controller
         /// <summary>
         /// 操作者id
         /// </summary>
-        private string operaterID;
+        //private string operaterID;
 
         /// <summary>
         /// 构造函数
@@ -26,6 +25,7 @@ namespace thesing.Controller
         public User()
         {
             info = new Model.User();
+            //operaterID = "";
         }
 
         /// <summary>
@@ -35,11 +35,11 @@ namespace thesing.Controller
         {
             Service.Sign sign = new Service.Sign();
             int id_int;
-            if (!Int32.TryParse(id, out int id_int))
+            if (!Int32.TryParse(id, out id_int))
             {
                 return -3; //账号错误
             }
-            if (password.Lenth > 20)
+            if (password.Length > 20)
             {
                 return -4; //密码过长
             }

@@ -12,7 +12,7 @@ namespace thesing.Controller
         /// <summary>
         /// 导师信息
         /// </summary>
-        public thesing.Model.Teacher info;
+        public new thesing.Model.Teacher info;
 
         /// <summary>
         /// 构造函数
@@ -24,7 +24,7 @@ namespace thesing.Controller
         /// </summary>
         /// <param name="projiect"></param>
         /// <returns></returns>
-        public Boolean AddProject(Project project)
+        public Boolean AddProject(Model.Project project)
         {
             return true;
         }
@@ -34,7 +34,7 @@ namespace thesing.Controller
         /// </summary>
         /// <param name="project"></param>
         /// <returns></returns>
-        public Boolean UpdateProject(Project project)
+        public Boolean UpdateProject(Model.Project project)
         {
             return false;
         }

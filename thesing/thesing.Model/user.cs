@@ -27,7 +27,7 @@ namespace thesing.Model
         /// <summary>
         /// 密码
         /// </summary>
-        private string password;
+        public string _password;
 
         /// <summary>
         /// 头像
@@ -37,12 +37,12 @@ namespace thesing.Model
         /// <summary>
         /// 学生【STUDENT】导师【TEACHER】学院【SCHOOL】校方【UNIVERSITY】
         /// </summary>
-        public int type;
+        public string type;
 
         /// <summary>
         /// 用户角色id
         /// </summary>
-        private string act;
+        public string _act;
 
         /// <summary>
         /// 电话
@@ -54,7 +54,18 @@ namespace thesing.Model
         /// </summary>
         public string email;
 
-        public User() { }
+        public User()
+        {
+            id = "";
+            name = "";
+            gender = "";
+            _password = "";
+            avatar = "";
+            type = "";
+            _act = "";
+            phone = "";
+            email = "";
+        }
 
     }
 }

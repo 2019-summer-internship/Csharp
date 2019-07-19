@@ -12,7 +12,7 @@ namespace thesing.Controller
         /// <summary>
         /// 学院信息
         /// </summary>
-        public thesing.Model.School info;
+        public new thesing.Model.School info;
 
         /// <summary>
         /// 构造函数

@@ -49,7 +49,7 @@ namespace thesing.Service
         /// </summary>  
         /// <param name="sql">要执行的查询SQL文本命令</param>  
         /// <returns>返回查询结果集</returns>  
-        public DataTable ExecuteDataTable(string sql)
+        public DataTable ExecuteDataTable(string sql, MySqlParameter parameter)
         {
             return ExecuteDataTable(sql, CommandType.Text, null);
         }

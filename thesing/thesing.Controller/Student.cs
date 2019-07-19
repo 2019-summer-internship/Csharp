@@ -12,7 +12,7 @@ namespace thesing.Controller
         /// <summary>
         /// 学生信息
         /// </summary>
-        public thesing.Model.Student info;
+        public new thesing.Model.Student info;
 
         /// <summary>
         /// 构造函数
@@ -66,7 +66,7 @@ namespace thesing.Controller
         /// </summary>
         /// <param name=""></param>
         /// <returns></returns>
-        public Boolean SendMessage(string image)
+        public Boolean SendMessage(string image, int a)
         {
             return true;
         }

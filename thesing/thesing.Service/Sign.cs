@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Data;
+//using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace thesing.Service
 {
     public class Sign
     {
+        //定义数据库驱动
         private SqlDbHelper database;
 
         public Sign()
@@ -27,14 +31,14 @@ namespace thesing.Service
             string sql = "SELECT * FROM users WHERE id=@id";
 
             //查询参数
-            MySqlParameter parameter =
+            MySqlParameter[] parameter =
             {
                 new MySqlParameter("@id", MySqlDbType.Int32),
                 new MySqlParameter("@pwd", MySqlDbType.VarChar)
             };
 
-            parameter[0] = id;
-            parameter[1] = password;
+            parameter[0].Value = id;
+            parameter[1].Value = password;
 
             //检查用户是否存在
             DataTable table = database.ExecuteDataTable(sql, parameter);
@@ -45,19 +49,19 @@ namespace thesing.Service
 
             sql = "SELECT * FROM users WHERE id=@id AND pwd=@password";
             //检查用户密码是否正确
-            DataTable table = database.ExecuteDataTable(sql, parameter);
+            table = database.ExecuteDataTable(sql, parameter);
 
             if (table != null)
             {
-                user.id = database.Rows[0]["id"].ToString();
-                user.name = database.Rows[0]["name"].ToString();
-                user.gender = database.Rows[0]["gender"].ToString();
-                user.password.set(database.Rows[0]["pwd"].ToString());
-                user.avatar = database.Rows[0]["avatar"].ToString();
-                user.type = userType[Int32.Prase(database.Rows[0]["type"])];
-                user.act.set(database.Rows[0]["info"].ToString());
-                user.phone = database.Rows[0]["phone"].ToString();
-                user.email = database.Rows[0]["email"].ToString();
+                user.id = table.Rows[0]["id"].ToString();
+                user.name = table.Rows[0]["name"].ToString();
+                user.gender = table.Rows[0]["gender"].ToString();
+                user._password = table.Rows[0]["pwd"].ToString();
+                user.avatar = table.Rows[0]["avatar"].ToString();
+                user.type = userType[Int32.Parse(table.Rows[0]["type"].ToString())];
+                user._act = table.Rows[0]["info"].ToString();
+                user.phone = table.Rows[0]["phone"].ToString();
+                user.email = table.Rows[0]["email"].ToString();
 
                 return 0; //查询成功
             }

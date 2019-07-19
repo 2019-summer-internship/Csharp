@@ -12,7 +12,12 @@ namespace thesing.Controller
         /// <summary>
         /// 校方信息
         /// </summary>
-        public thesing.Model.University info;
+        public new thesing.Model.University info;
+
+        public University()
+        {
+            info = new Model.University();
+        }
 
         /// <summary>
         /// 搜索学院
