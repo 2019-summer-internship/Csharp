@@ -4,7 +4,7 @@ using System.Text;
 
 namespace thesing.Model
 {
-    class Shedule
+    public class Schedule
     {/// <summary>
      /// 编号
      /// </summary>
