@@ -82,7 +82,8 @@ namespace thesing.Model
         /// <summary>
         /// 进度
         /// </summary>
-        public List<Task> process;
+        private Task process;
 
+        internal Task Process { get => process; set => process = value; }
     }
 }
