@@ -4,42 +4,54 @@ using System.Text;
 
 namespace thesing.Model
 {
+    /// <summary>
+    /// 学生模型
+    /// </summary>
     class Student
-    {/// <summary>
-     /// 学号
-     /// </summary>
-        public String studentID;
+    {
         /// <summary>
-        /// 成绩
+        /// 学生id
         /// </summary>
-        public String achievement;
+        public string studentID;
+
         /// <summary>
-        /// 班级的集合
+        /// 成绩列表
         /// </summary>
-        public String clas;
+        public List<Achievement> achievement;
+
         /// <summary>
-        /// 专业的集合
+        /// 班级
         /// </summary>
-        public String major;
+        public string clas;
+
+        /// <summary>
+        /// 专业
+        /// </summary>
+        public string major;
+
         /// <summary>
         /// 学院
         /// </summary>
-        public String school;
+        public string school;
+
         /// <summary>
         /// 我的题目
         /// </summary>
-        public String project;
+        public Project project;
+
         /// <summary>
         /// 我的老师
         /// </summary>
-        public String teacher;
+        public string teacher;
+
         /// <summary>
         /// 我的进度
         /// </summary>
-        public String process;
+        public List<Task> process;
+
         /// <summary>
         /// 通知的集合
         /// </summary>
-        public String mail;
+        public List<Mail> mail;
     }
 }

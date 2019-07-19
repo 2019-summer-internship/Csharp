@@ -4,27 +4,35 @@ using System.Text;
 
 namespace thesing.Model
 {
+    /// <summary>
+    /// 进度项模型
+    /// </summary>
     class Task
-    {/// <summary>
-     /// 编号
-     /// </summary>
-        public String number;
+    {
+        /// <summary>
+        /// 编号
+        /// </summary>
+        public string number;
+
         /// <summary>
         /// 任务名称
         /// </summary>
-        public String name;
+        public string name;
+
         /// <summary>
         /// 标签
         /// </summary>
-        public String label;
+        public string label;
+
         /// <summary>
         /// 完成时间
         /// </summary>
-        public String time;
+        public string time;
+
         /// <summary>
         /// 状态--0：还没开始 TODO，1：正在进行 DOING，2：已完成 DONE
         /// </summary>
-        public int statu;
+        public string statu;
 
     }
 }

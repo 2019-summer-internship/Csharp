@@ -4,65 +4,81 @@ using System.Text;
 
 namespace thesing.Model
 {
+    /// <summary>
+    /// 题目模型
+    /// </summary>
     public class Project
-    {/// <summary>
-     /// 题目编号
-     /// </summary>
-        public String number;
+    {
+        /// <summary>
+        /// 题目编号
+        /// </summary>
+        public string number;
+
         /// <summary>
         /// 发布时间
         /// </summary>
-        public String time;
+        public string time;
+
         /// <summary>
         /// 发布教师
         /// </summary>
-        public String teacher;
+        public string teacher;
+
         /// <summary>
         /// 选题学生
         /// </summary>
-        public String studentr;
+        public string studentr;
+
         /// <summary>
         /// 审核人
         /// </summary>
-        public String manger;
+        public string manger;
 
         /// <summary>
         /// 题目状态 --0：待审核，1：已通过，2：已被选，-1：已撤销
         /// </summary>
-        public int statu;
+        public string statu;
+
         /// <summary>
         /// 题目方向
         /// </summary>
-        public String type;
+        public string type;
+
         /// <summary>
         /// 题目来源--0：教师命题，1：学生自主命题
         /// </summary>
-        public int from;
+        public string from;
+
         /// <summary>
         /// 工作量
         /// </summary>
-        public String amount;
+        public string amount;
+
         /// <summary>
         /// 难度
         /// </summary>
-        public String difficult;
+        public string difficult;
+
         /// <summary>
         /// 摘要
         /// </summary>
-        public String abstracts;
+        public string abstracts;
+
         /// <summary>
         /// 题目背景
         /// </summary>
-        public String background;
+        public string background;
+
         /// <summary>
         /// 要求
         /// </summary>
-        public String requirement;
+        public string requirement;
 
         /// <summary>
         /// 附件
         /// </summary>
-        public String enclosure;
+        public List<string> enclosure;
+
         /// <summary>
         /// 进度
         /// </summary>
