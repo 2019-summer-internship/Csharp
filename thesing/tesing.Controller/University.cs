@@ -5,12 +5,26 @@ using System.Text;
 
 namespace tesing.Controller
 {
-    class University:User
+    /// <summary>
+    /// 校方类，继承自用户类
+    /// </summary>
+    public class University:User
     {
-        public thesing.Model.University university;
-        public Array<School> SearchSchool(string key, string type)
-        {
+        /// <summary>
+        /// 校方信息
+        /// </summary>
+        public thesing.Model.University info;
 
+        /// <summary>
+        /// 搜索学院
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public List<Model.School> SearchSchool(string key, string type)
+        {
+            List<Model.School> result = new List<Model.School>();
+            return result;
         }
 
     }

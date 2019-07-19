@@ -6,9 +6,9 @@ using System.Text;
 namespace tesing.Controller
 {
     /// <summary>
-    /// 学生类
+    /// 学生类，继承自用户类
     /// </summary>
-    class Student:User
+    public class Student:User
     {
         /// <summary>
         /// 学生信息
@@ -36,9 +36,9 @@ namespace tesing.Controller
         /// <param name="key"></param>
         /// <param name="type"></param>
         /// <returns></returns>
-        public List<Project> SearchProject(string key, string type)
+        public List<Model.Project> SearchProject(string key, string type)
         {
-            List<Project> result = new List<Project>();
+            List<Model.Project> result = new List<Model.Project>();
             return result;
         }
 

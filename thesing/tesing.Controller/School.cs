@@ -8,7 +8,7 @@ namespace tesing.Controller
     /// <summary>
     /// 学院类，继承自用户类
     /// </summary>
-    class School:User
+    public class School:User
     {
         /// <summary>
         /// 学院信息
@@ -57,9 +57,21 @@ namespace tesing.Controller
         /// <param name="key"></param>
         /// <param name="type"></param>
         /// <returns></returns>
-        public List<Schedule> ShowScheduleHistory(string key, string type)
+        public List<Model.Schedule> ShowScheduleHistory(string key, string type)
         {
-            List<Schedule> result = new List<Schedule>();
+            List<Model.Schedule> result = new List<Model.Schedule>();
+            return result;
+        }
+
+        /// <summary>
+        /// 搜索导师
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public List<Model.Teacher> SearchTeacher(string key, string type)
+        {
+            List<Model.Teacher> result = new List<Model.Teacher>();
             return result;
         }
 
@@ -80,9 +92,9 @@ namespace tesing.Controller
         /// <param name="key"></param>
         /// <param name="type"></param>
         /// <returns></returns>
-        public Array<Project> SearchUncheckProject(String key, string type)
+        public List<Model.Project> SearchUncheckProject(String key, string type)
         {
-            List<Project> result = new List<Project>();
+            List<Model.Project> result = new List<MOdel.Project>();
             return result;
         }
 
@@ -114,9 +126,9 @@ namespace tesing.Controller
         /// <param name="key"></param>
         /// <param name="type"></param>
         /// <returns></returns>
-        public Array<Recondiser> SearchReconsider(string key,string type)
+        public List<Model.Recondiser> SearchReconsider(string key,string type)
         {
-            List<Reconsider> result = new List<Reconsider>();
+            List<Model.Reconsider> result = new List<Model.Reconsider>();
             return result;
         }
 

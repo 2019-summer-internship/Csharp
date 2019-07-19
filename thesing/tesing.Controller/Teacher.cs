@@ -8,7 +8,7 @@ namespace tesing.Controller
     /// <summary>
     /// 导师类，继承自用户类
     /// </summary>
-    class Teacher:User
+    public class Teacher:User
     {
         /// <summary>
         /// 导师信息
@@ -56,9 +56,9 @@ namespace tesing.Controller
         /// <param name="key"></param>
         /// <param name="yepe"></param>
         /// <returns></returns>
-        public List<Project> SearchProjct(string key, string type)
+        public List<Model.Project> SearchProjct(string key, string type)
         {
-            List<Project> result = new List<Project>();
+            List<Model.Project> result = new List<Model.Project>();
             return result;
 
         }
