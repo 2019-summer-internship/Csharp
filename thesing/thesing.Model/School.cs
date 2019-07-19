@@ -29,6 +29,9 @@ namespace thesing.Model
         /// 通知的集合
         /// </summary>
         public String reconsideration;
+        /// <summary>
+        /// 通知的集合
+        /// </summary>
         public String mail;
     }
 }

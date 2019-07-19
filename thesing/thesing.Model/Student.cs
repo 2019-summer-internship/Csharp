@@ -10,9 +10,9 @@ namespace thesing.Model
      /// </summary>
         public String studentID;
         /// <summary>
-        /// 成绩
+        /// 成绩的对象
         /// </summary>
-        public String achievement;
+        public Achievement  achievement;
         /// <summary>
         /// 班级的集合
         /// </summary>
@@ -24,22 +24,22 @@ namespace thesing.Model
         /// <summary>
         /// 学院
         /// </summary>
-        public String school;
+        public String  school;
         /// <summary>
         /// 我的题目
         /// </summary>
-        public String project;
+        public Project project;
         /// <summary>
         /// 我的老师
         /// </summary>
-        public String teacher;
+        public Teacher teacher;
         /// <summary>
         /// 我的进度
         /// </summary>
-        public String process;
+        public List<Task> process;
         /// <summary>
         /// 通知的集合
         /// </summary>
-        public String mail;
+        public List<Mail> mail;
     }
 }

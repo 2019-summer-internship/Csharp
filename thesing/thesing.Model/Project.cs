@@ -60,9 +60,13 @@ namespace thesing.Model
         public String requirement;
 
         /// <summary>
-        /// 要求
+        /// 附件
         /// </summary>
         public String enclosure;
+        /// <summary>
+        /// 进度
+        /// </summary>
+        public List<Task> process;
 
     }
 }
