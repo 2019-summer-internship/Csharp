@@ -4,12 +4,15 @@ using System.Text;
 
 namespace thesing.Model
 {
-
-    class Student
-    {/// <summary>
-     /// 学号
-     /// </summary>
-        public String studentID;
+    /// <summary>
+    /// 学生模型
+    /// </summary>
+    public class Student
+    {
+        /// <summary>
+        /// 学生id
+        /// </summary>
+        public string studentID;
 
         /// <summary>
         /// 学生模型

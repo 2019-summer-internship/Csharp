@@ -7,7 +7,7 @@ namespace thesing.Model
     /// <summary>
     /// 成绩组成项模型
     /// </summary>
-    class Consititution
+    public class Consititution
     {
         /// <summary>
         /// 成绩组成项名称
