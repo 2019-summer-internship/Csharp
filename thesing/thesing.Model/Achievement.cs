@@ -7,7 +7,7 @@ namespace thesing.Model
     /// <summary>
     /// 成绩模型
     /// </summary>
-    class Achievement
+    public class Achievement
     {
         /// <summary>
         /// 编号

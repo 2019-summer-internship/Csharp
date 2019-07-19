@@ -7,7 +7,7 @@ namespace thesing.Model
     /// <summary>
     /// 成绩复议模型
     /// </summary>
-    class Reconsider
+    public class Reconsider
     {
         /// <summary>
         /// 编号

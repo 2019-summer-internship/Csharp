@@ -4,19 +4,11 @@ using System.Text;
 
 namespace thesing.Model
 {
-<<<<<<< HEAD
-    class Student
-    {/// <summary>
-     /// 学号
-     /// </summary>
-        public String studentID;
-=======
     /// <summary>
     /// 学生模型
     /// </summary>
-    class Student
+    public class Student
     {
->>>>>>> 29b30b308d27e05266cc250f76ae5fa26fc364df
         /// <summary>
         /// 学生id
         /// </summary>
