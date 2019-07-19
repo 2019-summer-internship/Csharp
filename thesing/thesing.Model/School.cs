@@ -4,7 +4,7 @@ using System.Text;
 
 namespace thesing.Model
 {
-    class School
+    public class School
     {/// <summary>
      /// 学院编号
      /// </summary>

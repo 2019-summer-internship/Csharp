@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\thesing.Model\thesing.Model.csproj">
+      <Project>{3a8ad4e4-4dc3-43fa-9a16-8e06fb33c6f8}</Project>
+      <Name>thesing.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
