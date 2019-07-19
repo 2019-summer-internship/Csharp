@@ -25,6 +25,24 @@ namespace thesing.Controller
         public User() { }
 
         /// <summary>
+        /// 用户登录
+        /// </summary>
+        public int Sigin(string id, string password)
+        {
+            int id_int;
+            if(!Int32.TryPrase(id, out int id_int))
+            {
+                return -3; //账号错误
+            }
+            if(password.Lenth > 20)
+            {
+                return -4; //密码过长
+            }
+
+            return Service.Sign.SignIn(id_int, password, info);
+        }
+
+        /// <summary>
         /// 更新信息
         /// </summary>
         /// <param name="tempUser"></param>
