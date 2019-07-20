@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace thesing.page
 {
     /// <summary>
-    /// School_schdule.xaml 的交互逻辑
+    /// Page4.xaml 的交互逻辑
     /// </summary>
-    public partial class School_schdule : Page
+    public partial class Page4 : Page
     {
-        public School_schdule()
+        public Page4()
         {
             InitializeComponent();
         }
