@@ -40,11 +40,6 @@ namespace thesing.Model
         public string type;
 
         /// <summary>
-        /// 用户角色id
-        /// </summary>
-        public string _act;
-
-        /// <summary>
         /// 电话
         /// </summary>
         public string phone;
@@ -62,7 +57,6 @@ namespace thesing.Model
             _password = "";
             avatar = "";
             type = "";
-            _act = "";
             phone = "";
             email = "";
         }

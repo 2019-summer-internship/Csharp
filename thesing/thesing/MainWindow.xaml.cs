@@ -46,7 +46,10 @@ namespace thesing
 
             switch (code)
             {
-                case 0: MessageBox.Show("登录成功"); break;
+                case 0:
+                    Home home = new Home();
+                    home.Show();
+                    break;
                 case -1: MessageBox.Show("用户不存在"); break;
                 case -2: MessageBox.Show("密码或账号错误"); break;
                 case -3: MessageBox.Show("账号格式错误"); break;

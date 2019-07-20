@@ -59,7 +59,6 @@ namespace thesing.Service
                 user._password = table.Rows[0]["pwd"].ToString();
                 user.avatar = table.Rows[0]["avatar"].ToString();
                 user.type = userType[Int32.Parse(table.Rows[0]["type"].ToString())];
-                user._act = table.Rows[0]["info"].ToString();
                 user.phone = table.Rows[0]["phone"].ToString();
                 user.email = table.Rows[0]["email"].ToString();
 
