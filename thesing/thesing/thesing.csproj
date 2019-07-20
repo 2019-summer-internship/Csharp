@@ -74,8 +74,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="page\Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="page\Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -110,6 +117,14 @@
       <Project>{633319eb-d364-4a46-a1c1-f3bad781cfae}</Project>
       <Name>thesing.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="source\thesing-logo-h-white.png" />
+    <Resource Include="source\thesing-logo-h.png" />
+    <Resource Include="source\thesing-logo-v-white.png" />
+    <Resource Include="source\thesing-logo-v.png" />
+    <Resource Include="source\thesing-logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
