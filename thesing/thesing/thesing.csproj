@@ -81,6 +81,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="page\Sudent\Student_Grade.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\Sudent\Student_Process.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\Sudent\Student_Project.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\Sudent\Student_Teacher.xaml">
     <Page Include="page\detail_teacher.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -111,6 +124,17 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="page\Sudent\Student_Grade.xaml.cs">
+      <DependentUpon>Student_Grade.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\Sudent\Student_Process.xaml.cs">
+      <DependentUpon>Student_Process.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\Sudent\Student_Project.xaml.cs">
+      <DependentUpon>Student_Project.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\Sudent\Student_Teacher.xaml.cs">
+      <DependentUpon>Student_Teacher.xaml</DependentUpon>
     <Compile Include="page\detail_teacher.xaml.cs">
       <DependentUpon>detail_teacher.xaml</DependentUpon>
     </Compile>
@@ -165,6 +189,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="page\Sudent\Stu_image\cirle.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="page\Sudent\Stu_image\people.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="thesing-logo-h-white.png" />
   </ItemGroup>
   <ItemGroup>
