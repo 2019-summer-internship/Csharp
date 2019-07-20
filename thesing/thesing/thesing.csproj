@@ -107,6 +107,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="page\teacher\Teacher-Myprojects.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="page\teacher\Teacher-Projects.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="source\style.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -157,6 +165,8 @@
     <Compile Include="page\school\project.xaml.cs">
       <DependentUpon>project.xaml</DependentUpon>
     </Compile>
+    <Compile Include="page\teacher\Teacher-Myprojects.xaml.cs" />
+    <Compile Include="page\teacher\Teacher-Projects.xaml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
