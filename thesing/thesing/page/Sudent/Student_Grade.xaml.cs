@@ -13,16 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace thesing.page
+namespace thesing.page.Sudent
 {
     /// <summary>
-    /// Page1.xaml 的交互逻辑
+    /// Grade.xaml 的交互逻辑
     /// </summary>
-    public partial class Page1 : Page
+    public partial class Grade : Page
     {
-        public Page1()
+        public Grade()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
     }
 }
