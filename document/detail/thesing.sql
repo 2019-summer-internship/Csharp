@@ -1,168 +1,194 @@
-drop database if exists thesing;
+ï»¿drop database if exists thesing;
 create database thesing;
 use thesing;
 
 create table users (
-	id int primary key comment 'ÓÃ»§ÕËºÅ',
-	flag bool not null default 1 comment 'ÓÃ»§×´Ì¬£º1-¼¤»î£¬0-×¢Ïú',
-	name varchar(30) not null comment 'ÓÃ»§ĞÕÃû',
-    gengder int comment 'ÓÃ»§ÄêÁä',
-    pwd varchar(20) not null comment 'ÓÃ»§ÃÜÂë',
-    avatar varchar(255) comment 'ÓÃ»§Í·ÏñÂ·¾¶',
-    type int not null comment 'ÓÃ»§ÀàĞÍ£º1-Ñ§Éú£¬2-µ¼Ê¦£¬3-Ñ§Ôº£¬4-Ğ£·½',
-    info int not null comment 'ÓÃ»§½ÇÉ«id -> Ñ§Éú±í/µ¼Ê¦±í/Ñ§Ôº±í/Ğ£·½±í',
-    phone varchar(11) comment 'ÓÃ»§ÁªÏµ·½Ê½',
-    email varchar(50) comment 'ÓÃ»§ÓÊÏä'
-)comment='ÓÃ»§±í';
+	id int primary key comment 'ç”¨æˆ·è´¦å·',
+	flag bool not null default 1 comment 'ç”¨æˆ·çŠ¶æ€ï¼š1-æ¿€æ´»ï¼Œ0-æ³¨é”€',
+	name varchar(30) not null comment 'ç”¨æˆ·å§“å',
+    age int comment 'ç”¨æˆ·å¹´é¾„',
+    gender int comment 'ç”¨æˆ·æ€§åˆ«ï¼š1-æ— ï¼Œ2-å¥³ï¼Œ3-ç”·',
+    pwd varchar(20) not null comment 'ç”¨æˆ·å¯†ç ',
+    avatar varchar(255) comment 'ç”¨æˆ·å¤´åƒè·¯å¾„',
+    type int not null comment 'ç”¨æˆ·ç±»å‹ï¼š1-å­¦ç”Ÿï¼Œ2-å¯¼å¸ˆï¼Œ3-å­¦é™¢ï¼Œ4-æ ¡æ–¹',
+    phone varchar(11) comment 'ç”¨æˆ·è”ç³»æ–¹å¼',
+    email varchar(50) comment 'ç”¨æˆ·é‚®ç®±'
+)comment='ç”¨æˆ·è¡¨' character set=utf8;
 
 create table student (
-	_id int primary key comment 'Ñ§Éúid',
-    achievement varchar(30) comment '³É¼¨idÁĞ±í -> ³É¼¨±í',
-    class int not null comment '°à¼¶id -> °à¼¶±í',
-    major int not null comment '×¨Òµid -> ×¨Òµ±í',
-    school int not null comment 'Ñ§Ôºid -> Ñ§Ôº±í',
-    project int comment 'ÌâÄ¿id -> ÌâÄ¿±í',
-    teacher int comment 'µ¼Ê¦id -> µ¼Ê¦±í'
-)comment='Ñ§Éú±í';
+	_id int primary key comment 'å­¦ç”Ÿid',
+    achievement varchar(30) comment 'æˆç»©idåˆ—è¡¨ -> æˆç»©è¡¨',
+    class int not null comment 'ç­çº§id -> ç­çº§è¡¨',
+    major int not null comment 'ä¸“ä¸šid -> ä¸“ä¸šè¡¨',
+    school int not null comment 'å­¦é™¢id -> å­¦é™¢è¡¨',
+    project int comment 'é¢˜ç›®id -> é¢˜ç›®è¡¨',
+    teacher int comment 'å¯¼å¸ˆid -> å¯¼å¸ˆè¡¨'
+)comment='å­¦ç”Ÿè¡¨' character set=utf8;
 
 create table teacher (
-	_id int primary key comment 'µ¼Ê¦id',
-    school int not null comment 'Ñ§Ôºid -> Ñ§Ôº±í',
-    title varchar(100) comment 'Í·ÏÎÁĞ±í',
-    introduction text comment '¼ò½é',
-    students varchar(100) comment 'Ëù´øÑ§ÉúidÁĞ±í -> Ñ§Éú±í',
-    projects varchar(100) comment 'Ëù³öÌâÄ¿idÁĞ±í -> ÌâÄ¿±í'
-)comment='µ¼Ê¦±í';
+	_id int primary key comment 'å¯¼å¸ˆid',
+    school int not null comment 'å­¦é™¢id -> å­¦é™¢è¡¨',
+    title varchar(100) comment 'å¤´è¡”åˆ—è¡¨',
+    introduction text comment 'ç®€ä»‹',
+    students varchar(100) comment 'æ‰€å¸¦å­¦ç”Ÿidåˆ—è¡¨ -> å­¦ç”Ÿè¡¨',
+    projects varchar(100) comment 'æ‰€å‡ºé¢˜ç›®idåˆ—è¡¨ -> é¢˜ç›®è¡¨'
+)comment='å¯¼å¸ˆè¡¨' character set=utf8;
 
 create table school (
-	_id int primary key auto_increment comment 'Ñ§Ôºid',
-    name varchar(50) not null comment 'Ñ§ÔºÃû³Æ',
-    university int not null comment 'ËùÊôÑ§Ôºid -> Ñ§Ğ£±í',
-    schedules varchar(50) comment 'Ñ§ÔºÈÕ³Ì°²ÅÅ'
-)comment='Ñ§Ôº±í';
+	_id int primary key auto_increment comment 'å­¦é™¢id',
+    name varchar(50) not null comment 'å­¦é™¢åç§°',
+    university int not null comment 'æ‰€å±å­¦é™¢id -> å­¦æ ¡è¡¨',
+    schedules varchar(50) comment 'å­¦é™¢æ—¥ç¨‹å®‰æ’'
+)comment='å­¦é™¢è¡¨' character set=utf8;
 
 create table university (
-	_id int primary key auto_increment comment 'Ñ§Ğ£id',
-    name varchar(50) not null comment 'Ñ§Ğ£Ãû³Æ',
-    schools varchar(300) not null comment 'ÏÂÊôÑ§ÔºidÁĞ±í -> Ñ§Ôº±í'
-)comment='Ñ§Ğ£±í';
+	_id int primary key auto_increment comment 'å­¦æ ¡id',
+    name varchar(50) not null comment 'å­¦æ ¡åç§°',
+    schools varchar(300) not null comment 'ä¸‹å±å­¦é™¢idåˆ—è¡¨ -> å­¦é™¢è¡¨'
+)comment='å­¦æ ¡è¡¨' character set=utf8;
 
 create table class (
-	_id int primary key auto_increment comment '°à¼¶id',
-    school int not null comment 'ËùÊôÑ§Ôºid -> Ñ§Ôº±í',
-    name varchar(50) not null comment '°à¼¶Ãû³Æ'
-)comment='°à¼¶±í';
+	_id int primary key auto_increment comment 'ç­çº§id',
+    school int not null comment 'æ‰€å±å­¦é™¢id -> å­¦é™¢è¡¨',
+    name varchar(50) not null comment 'ç­çº§åç§°'
+)comment='ç­çº§è¡¨' character set=utf8;
 
 create table major (
-	_id int primary key auto_increment comment '×¨Òµid',
-    school int not null comment 'ËùÊôÑ§Ôºid -> Ñ§Ôº±í',
-    name varchar(50) not null comment '×¨ÒµÃû³Æ'
-)comment='×¨Òµ±í';
+	_id int primary key auto_increment comment 'ä¸“ä¸šid',
+    school int not null comment 'æ‰€å±å­¦é™¢id -> å­¦é™¢è¡¨',
+    name varchar(50) not null comment 'ä¸“ä¸šåç§°'
+)comment='ä¸“ä¸šè¡¨' character set=utf8;
 
 create table project (
-	_id int primary key auto_increment comment 'ÌâÄ¿id',
-    name varchar(50) not null comment 'ÌâÄ¿Ãû³Æ',
-    publish_time date not null comment '·¢²¼Ê±¼ä',
-    teacher int not null comment '³öÌâ½ÌÊ¦',
-    student int comment 'Ñ¡ÌâÑ§Éú',
-    manager int not null comment 'ÉóºËÑ§Ôº',
-    statu tinyint not null default 1 comment 'ÌâÄ¿×´Ì¬£º1-´ıÉóºË£¬2-ÒÑ·¢²¼£¬3-ÒÑ±»Ñ¡',
-    type varchar(50) not null comment 'ÌâÄ¿ÀàĞÍ',
-    form tinyint not null comment 'ÌâÄ¿À´Ô´£º1-µ¼Ê¦ÃüÌâ£¬2-Ñ§Éú×ÔÖ÷ÃüÌâ',
-    amount tinyint not null comment '¹¤×÷Á¿£º1~5µÈ¼¶',
-    difficult tinyint not null comment 'ÄÑ¶È£º1~5µÈ¼¶',
-    abstract text not null comment 'ÕªÒª',
-    background text not null comment 'ÌâÄ¿±³¾°',
-    requirement text not null comment 'ÌâÄ¿ÒªÇó',
-    enclosure varchar(500) comment '¸½¼ş',
-    tasks varchar(100) comment '½ø¶ÈidÁĞ±í -> ½ø¶È±í'
-)comment='ÌâÄ¿±í';
+	_id int primary key auto_increment comment 'é¢˜ç›®id',
+    name varchar(50) not null comment 'é¢˜ç›®åç§°',
+    publish_time date not null comment 'å‘å¸ƒæ—¶é—´',
+    teacher int not null comment 'å‡ºé¢˜æ•™å¸ˆ',
+    student int comment 'é€‰é¢˜å­¦ç”Ÿ',
+    manager int not null comment 'å®¡æ ¸å­¦é™¢',
+    statu tinyint not null default 1 comment 'é¢˜ç›®çŠ¶æ€ï¼š1-å¾…å®¡æ ¸ï¼Œ2-å·²å‘å¸ƒï¼Œ3-å·²è¢«é€‰',
+    type varchar(50) not null comment 'é¢˜ç›®ç±»å‹',
+    form tinyint not null comment 'é¢˜ç›®æ¥æºï¼š1-å¯¼å¸ˆå‘½é¢˜ï¼Œ2-å­¦ç”Ÿè‡ªä¸»å‘½é¢˜',
+    amount tinyint not null comment 'å·¥ä½œé‡ï¼š1~5ç­‰çº§',
+    difficult tinyint not null comment 'éš¾åº¦ï¼š1~5ç­‰çº§',
+    abstract text not null comment 'æ‘˜è¦',
+    background text not null comment 'é¢˜ç›®èƒŒæ™¯',
+    requirement text not null comment 'é¢˜ç›®è¦æ±‚',
+    enclosure varchar(500) comment 'é™„ä»¶',
+    tasks varchar(100) comment 'è¿›åº¦idåˆ—è¡¨ -> è¿›åº¦è¡¨'
+)comment='é¢˜ç›®è¡¨' character set=utf8;
 
 create table message (
-	_id int primary key auto_increment comment 'ÏûÏ¢id',
-    sender int not null comment '·¢ËÍÕßid -> ÓÃ»§±í',
-    receiver int not null comment '½ÓÊÜÕßid -> ÓÃ»§±í',
-    statu tinyint not null default 1 comment '×´Ì¬£º1-Î´¶Á£¬2-ÒÑ¶Á',
-    send_time date not null comment '·¢ËÍÊ±¼ä',
-    type tinyint not null comment 'ÏûÏ¢ÀàĞÍ£º1-ÎÄ×Ö£¬2-Í¼Æ¬£¬3-ÎÄ¼ş',
-    content text comment 'ÄÚÈİ',
-    image varchar(100) comment 'Í¼Æ¬Â·¾¶',
-    file varchar(100) comment 'ÎÄ¼şÂ·¾¶',
-    label varchar(50) comment 'ÎÄ¼ş±êÇ©'
-)comment='ÏûÏ¢±í';
+	_id int primary key auto_increment comment 'æ¶ˆæ¯id',
+    sender int not null comment 'å‘é€è€…id -> ç”¨æˆ·è¡¨',
+    receiver int not null comment 'æ¥å—è€…id -> ç”¨æˆ·è¡¨',
+    statu tinyint not null default 1 comment 'çŠ¶æ€ï¼š1-æœªè¯»ï¼Œ2-å·²è¯»',
+    send_time datetime not null comment 'å‘é€æ—¶é—´',
+    type tinyint not null comment 'æ¶ˆæ¯ç±»å‹ï¼š1-æ–‡å­—ï¼Œ2-å›¾ç‰‡ï¼Œ3-æ–‡ä»¶',
+    content text comment 'å†…å®¹',
+    image varchar(100) comment 'å›¾ç‰‡è·¯å¾„',
+    file varchar(100) comment 'æ–‡ä»¶è·¯å¾„',
+    label varchar(50) comment 'æ–‡ä»¶æ ‡ç­¾'
+)comment='æ¶ˆæ¯è¡¨' character set=utf8;
 
 create table task (
-    _id int primary key auto_increment comment '½ø¶Èid',
-    name varchar(50) comment '½ø¶ÈÃû³Æ',
-    project int not null comment 'ËùÊôÌâÄ¿',
-    label varchar(50) comment '±êÇ©',
-    publish_time date not null comment '·¢²¼Ê±¼ä',
-    statu tinyint not null default 1 comment '×´Ì¬£º1-Î´¿ªÊ¼£¬2-ÕıÔÚ½øĞĞ£¬3-ÒÑÍê³É'
-)comment='½ø¶È±í';
+    _id int primary key auto_increment comment 'è¿›åº¦id',
+    name varchar(50) comment 'è¿›åº¦åç§°',
+    project int not null comment 'æ‰€å±é¢˜ç›®',
+    label varchar(50) comment 'æ ‡ç­¾',
+    publish_time date not null comment 'å‘å¸ƒæ—¶é—´',
+    statu tinyint not null default 1 comment 'çŠ¶æ€ï¼š1-æœªå¼€å§‹ï¼Œ2-æ­£åœ¨è¿›è¡Œï¼Œ3-å·²å®Œæˆ'
+)comment='è¿›åº¦è¡¨' character set=utf8;
 
 create table mail (
-	_id int primary key auto_increment comment 'Í¨Öªid',
-    flag_sender bool not null default 1 comment '·¢ËÍÕßÊÇ·ñÉ¾³ı±ê¼Ç',
-    flag_receiver bool not null default 1 comment '½ÓÊÕÕßÊÇ·ñÉ¾³ı±ê¼Ç',
-    sender int not null comment '·¢ËÍÕßid -> ÓÃ»§±í',
-    receiver int not null comment '½ÓÊÕÕßid -> ÓÃ»§±í',
-    send_time date not null comment '·¢ËÍÊ±¼ä',
-    title varchar(100) not null comment '±êÌâ',
-    content text not null comment 'ÄÚÈİ',
-    statu tinyint not null default 1 comment '×´Ì¬£º1-Î´¶Á£¬2-ÒÑ¶Á'
-)comment='Í¨Öª±í';
+	_id int primary key auto_increment comment 'é€šçŸ¥id',
+    flag_sender bool not null default 1 comment 'å‘é€è€…æ˜¯å¦åˆ é™¤æ ‡è®°',
+    flag_receiver bool not null default 1 comment 'æ¥æ”¶è€…æ˜¯å¦åˆ é™¤æ ‡è®°',
+    sender int not null comment 'å‘é€è€…id -> ç”¨æˆ·è¡¨',
+    receiver int not null comment 'æ¥æ”¶è€…id -> ç”¨æˆ·è¡¨',
+    send_time datetime not null comment 'å‘é€æ—¶é—´',
+    title varchar(100) not null comment 'æ ‡é¢˜',
+    content text not null comment 'å†…å®¹',
+    statu tinyint not null default 1 comment 'çŠ¶æ€ï¼š1-æœªè¯»ï¼Œ2-å·²è¯»'
+)comment='é€šçŸ¥è¡¨' character set=utf8;
 
 create table examine (
-	_id int primary key auto_increment comment 'ÆÀÔÄid',
-    student int not null comment 'ËùÊôÑ§Éúid -> Ñ§Éú±í',
-    teacher int not null comment 'ÆÀÔÄµ¼Ê¦id -> µ¼Ê¦±í',
-    score int not null comment '³É¼¨',
-    statu tinyint not null default 1 comment '×´Ì¬£º1-»¹Î´¿ªÊ¼£¬2-ÕıÔÚ½øĞĞ£¬3-ÒÑ¾­Íê³É',
-    files varchar(100) comment 'ÎÄ¼şidÁĞ±í -> ÆÀÔÄÎÄ¼ş±í'
-)comment='ÆÀÔÄ±í';
+	_id int primary key auto_increment comment 'è¯„é˜…id',
+    student int not null comment 'æ‰€å±å­¦ç”Ÿid -> å­¦ç”Ÿè¡¨',
+    teacher int not null comment 'è¯„é˜…å¯¼å¸ˆid -> å¯¼å¸ˆè¡¨',
+    score int not null comment 'æˆç»©',
+    statu tinyint not null default 1 comment 'çŠ¶æ€ï¼š1-è¿˜æœªå¼€å§‹ï¼Œ2-æ­£åœ¨è¿›è¡Œï¼Œ3-å·²ç»å®Œæˆ',
+    files varchar(100) comment 'æ–‡ä»¶idåˆ—è¡¨ -> è¯„é˜…æ–‡ä»¶è¡¨'
+)comment='è¯„é˜…è¡¨' character set=utf8;
 
 create table examine_file (
-	_id int primary key auto_increment comment 'ÆÀÔÄÎÄ¼şid',
-    examine int not null comment 'ËùÊôÆÀÔÄid -> ÆÀÔÄ±í',
-    file varchar(50) not null comment 'ÆÀÔÄÎÄ¼şÂ·¾¶',
-    score int comment 'µÃ·Ö',
-    feedback text comment '·´À¡',
-    statu tinyint not null default 1 comment '×´Ì¬£º1-Î´¿ªÊ¼£¬2-ÒÑÍê³É'
-)comment='ÆÀÔÄÎÄ¼ş±í';
+	_id int primary key auto_increment comment 'è¯„é˜…æ–‡ä»¶id',
+    examine int not null comment 'æ‰€å±è¯„é˜…id -> è¯„é˜…è¡¨',
+    file varchar(50) not null comment 'è¯„é˜…æ–‡ä»¶è·¯å¾„',
+    score int comment 'å¾—åˆ†',
+    feedback text comment 'åé¦ˆ',
+    statu tinyint not null default 1 comment 'çŠ¶æ€ï¼š1-æœªå¼€å§‹ï¼Œ2-å·²å®Œæˆ'
+)comment='è¯„é˜…æ–‡ä»¶è¡¨' character set=utf8;
 
 create table reconsider (
-	_id int primary key auto_increment comment '¸´Òéid',
-    applicant int not null comment 'Ìá³öÕßid -> ÓÃ»§±í',
-    manager int not null comment 'ÉóºËÑ§Ôºid -> Ñ§Ôº±í',
-    student int not null comment '¸´Òé³É¼¨ËùÊôÑ§Éú',
-    reason text not null comment '¸´ÒéÔ­Òò',
-    statu tinyint not null default 1 comment '×´Ì¬£º1-Î´´¦Àí£¬2-ÒÑ²µ»Ø£¬3-ÒÑ½ÓÊÜ'
-)comment='¸´Òé±í';
+	_id int primary key auto_increment comment 'å¤è®®id',
+    applicant int not null comment 'æå‡ºè€…id -> ç”¨æˆ·è¡¨',
+    manager int not null comment 'å®¡æ ¸å­¦é™¢id -> å­¦é™¢è¡¨',
+    student int not null comment 'å¤è®®æˆç»©æ‰€å±å­¦ç”Ÿ',
+    reason text not null comment 'å¤è®®åŸå› ',
+    statu tinyint not null default 1 comment 'çŠ¶æ€ï¼š1-æœªå¤„ç†ï¼Œ2-å·²é©³å›ï¼Œ3-å·²æ¥å—'
+)comment='å¤è®®è¡¨' character set=utf8;
 
 create table achievement (
-	_id int primary key auto_increment comment '³É¼¨id',
-    student int not null comment 'ËùÊôÑ§Éúid -> Ñ§Éú±í',
-    score int comment '³É¼¨',
-    stage tinyint not null comment '½×¶Î',
-    consititution varchar(100) comment '³É¼¨×é³ÉidÁĞ±í -> ³É¼¨×é³É±í'
-)comment='³É¼¨±í';
+	_id int primary key auto_increment comment 'æˆç»©id',
+    student int not null comment 'æ‰€å±å­¦ç”Ÿid -> å­¦ç”Ÿè¡¨',
+    score int comment 'æˆç»©',
+    stage tinyint not null comment 'é˜¶æ®µ',
+    consititution varchar(100) comment 'æˆç»©ç»„æˆidåˆ—è¡¨ -> æˆç»©ç»„æˆè¡¨'
+)comment='æˆç»©è¡¨' character set=utf8;
 
 create table consititution (
-	_id int primary key auto_increment comment '³É¼¨×é³Éid',
-    achievement int not null comment 'ËùÊô³É¼¨id -> ³É¼¨±í',
-    name varchar(50) comment '×é³ÉÏîÃû³Æ',
-    rate float not null comment '×é³É±ÈÀı',
-    score int comment 'µÃ·Ö',
-    teacher int comment 'ÆÀ·Öµ¼Ê¦id -> µ¼Ê¦±í',
-    grede_time date comment 'ÆÀ·ÖÊ±¼ä'
-)comment='³É¼¨×é³É±í';
+	_id int primary key auto_increment comment 'æˆç»©ç»„æˆid',
+    achievement int not null comment 'æ‰€å±æˆç»©id -> æˆç»©è¡¨',
+    name varchar(50) comment 'ç»„æˆé¡¹åç§°',
+    rate float not null comment 'ç»„æˆæ¯”ä¾‹',
+    score int comment 'å¾—åˆ†',
+    teacher int comment 'è¯„åˆ†å¯¼å¸ˆid -> å¯¼å¸ˆè¡¨',
+    grade_time datetime comment 'è¯„åˆ†æ—¶é—´'
+)comment='æˆç»©ç»„æˆè¡¨' character set=utf8;
 
 create table shedule (
-	_id int primary key auto_increment comment 'ÈÕ³Ìid',
-    flag bool not null default 0 comment 'ÊÇ·ñ±»É¾³ı£º0-Î´É¾³ı£¬1-ÒÑÉ¾³ı',
-    school int not null comment 'ËùÊôÑ§Ôºid -> Ñ§Ôº±í',
-    stage tinyint not null comment '½×¶Î£º1-³öÌâ£¬2-Ñ¡Ìâ£¬3-¿ªÌâ£¬4-ÖĞÆÚ£¬5-½áÌâ',
-    satrt_time date not null comment '¿ªÊ¼Ê±¼ä',
-    end_time date not null comment '½áÊøÊ±¼ä',
-    content text comment 'ÈÕ³ÌËµÃ÷'
-)comment='ÈÕ³Ì±í';
+	_id int primary key auto_increment comment 'æ—¥ç¨‹id',
+    flag bool not null default 0 comment 'æ˜¯å¦è¢«åˆ é™¤ï¼š0-æœªåˆ é™¤ï¼Œ1-å·²åˆ é™¤',
+    school int not null comment 'æ‰€å±å­¦é™¢id -> å­¦é™¢è¡¨',
+    stage tinyint not null comment 'é˜¶æ®µï¼š1-å‡ºé¢˜ï¼Œ2-é€‰é¢˜ï¼Œ3-å¼€é¢˜ï¼Œ4-ä¸­æœŸï¼Œ5-ç»“é¢˜',
+    satrt_time date not null comment 'å¼€å§‹æ—¶é—´',
+    end_time date not null comment 'ç»“æŸæ—¶é—´',
+    content text comment 'æ—¥ç¨‹è¯´æ˜'
+)comment='æ—¥ç¨‹è¡¨' character set=utf8;
+
+
+-- æ’å…¥æ•°æ®
+Insert into users(id,flag,name,age,gender,pwd,avatar,type,phone,email) values(2017112113,1,'JACK',19,2,'123456','document\picture1',1,'18230928888','1234567891@qq.com');
+Insert into users(id,flag,name,age,gender,pwd,avatar,type,phone,email) values(1999121234,1,'Hu',49,3,'1234a','document\picture2',2,'15230926688','1230000891@qq.com');
+Insert into users(id,flag,name,age,gender,pwd,avatar,type,phone,email) values(3001,1,'ä¿¡æ¯å­¦é™¢',12,1,'12345','document\picture3',3,'921688','1000899@qq.com');
+Insert into users(id,flag,name,age,gender,pwd,avatar,type,phone,email) values(30,1,'SWJTU',129,1,'12345','document\picture4',4,'926688','1000891@qq.com');
+
+Insert into student (_id,achievement,class,major,school,project,teacher) values (2017112113,'1',1,1,1,1,1999121234);
+Insert into teacher(_id,school,title,introduction,students,projects) values (1999121234,1,'å‰¯æ•™æˆ','é•¿æ±Ÿå­¦è€…ï¼Œä¸“æ”»äººå·¥æ™ºèƒ½æ–¹é¢','2017112113','1');
+Insert into school(_id,name,university,schedules) values (3001,'ä¿¡æ¯å­¦é™¢',1,'æš‚æ— ');
+Insert into university(_id,name,schools) values (30,'SWJTU','3001');
+
+Insert into class(_id,school,name) values (1,3001,'è½¯ä»¶å·¥ç¨‹äºŒç­');
+Insert into major(_id,school,name) values (1,3001,'è½¯ä»¶å·¥ç¨‹');
+Insert into project(_id,name,publish_time,teacher,student,manager,statu,type,form,amount,difficult,abstract,background,requirement,enclosure,tasks) values(1,'äººè„¸è¯†åˆ«','2019-05-02',1999121234,2017112113,1,1,'äººå·¥æ™ºèƒ½',1,4,4,'å±äºäººå·¥æ™ºèƒ½çš„å›¾å½¢å›¾åƒè¯†åˆ«','éšç€äººå·¥æ™ºèƒ½çš„å‘å±•...','èƒ½åœ¨ç°æœ‰äººè„¸è¯†åˆ«ä¸Šæœ‰æ‰€åˆ›æ–°','å…³äºäººè„¸è¯†åˆ«çš„ç®—æ³•åˆé›†æ–‡ä»¶','1');
+Insert into message(_id,sender,receiver,statu,send_time,type,content,image,file,label) values (1,1999121234,2017112113,1,'2019-05-05 12:00:00',1,'ä½ å¥½ï¼Œè¯·ä»”ç»†é˜…è¯»é™„ä»¶','æ— ','æ— ','æ— ');
+Insert into task(_id,name,project,label,publish_time,statu) values (1,'åˆæ­¥è®¾è®¡æ–‡æ¡£',1,'äººå·¥æ™ºèƒ½','2019-04-28',2);
+Insert into mail(_id,flag_sender,flag_receiver, sender,receiver,send_time,title,content,statu) values (1,0,0,1999121234,2017112113,'2019-05-05 09:10:00','é€‰é¢˜ç»“æœ','åŒå­¦ä½ å¥½ï¼Œä½ å·²é€‰é¢˜æˆåŠŸ',1);
+Insert into examine(_id,student,teacher, score,statu,files) values (1,2017112113,1999121234,90,1,'00001');
+Insert into examine_file(_id,examine,file,score,feedback,statu) values (1,1,'åˆæ­¥è®¾è®¡æ–‡æ¡£',89,'æ— ',2);
+Insert into reconsider 
+(_id,applicant,manager,student,reason,statu) values (1,1999121234,3001,2017112113,'å®é™…å¾—åˆ†ä¸æœ¬äººè¯„é˜…åˆ†æ•°ä¸ç¬¦',2);
+Insert into achievement(_id,student,score,stage,consititution) values (1,2017112113,80,1,'1');
+Insert into consititution(_id,achievement,name,rate,score,teacher,grade_time) values (1,1,'æ–‡æ¡£',0.8,'88',1999121234,'2019-05-08 09:10:00');
+Insert into shedule(_id,flag,school,stage,satrt_time,end_time,content) values (1,0,3001,3,'2019-05-05','2019-05-08','å¼€é¢˜ç­”è¾©');
