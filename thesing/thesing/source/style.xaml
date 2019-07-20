@@ -9,7 +9,7 @@
         <Setter Property="FontSize" Value="20"/>
         <Setter Property="Padding" Value="50,0,6,0"/>
         <Setter Property="Visibility" Value="Collapsed"/>
-        <Setter Property="IsCheckable" Value="True"/>
+        <Setter Property="IsCheckable" Value="False"/>
         <Style.Triggers>
             <!-- 更改三态的背景颜色 -->
             <Trigger Property="IsChecked" Value="true"> 
@@ -35,6 +35,5 @@
         </Style.Triggers>
     </Style>
 
-    
-    
+
 </ResourceDictionary>
