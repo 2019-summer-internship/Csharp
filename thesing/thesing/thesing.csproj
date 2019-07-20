@@ -160,5 +160,8 @@
     <Resource Include="source\image\thesing-logo-v.png" />
     <Resource Include="source\image\thesing-logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="source\image\thesing-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

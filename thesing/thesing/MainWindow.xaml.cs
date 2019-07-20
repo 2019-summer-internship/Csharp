@@ -24,6 +24,11 @@ namespace thesing
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// 登录按钮响应函数
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void sign(object sender, RoutedEventArgs e)
         {
             Controller.User user = new Controller.User();
@@ -47,8 +52,9 @@ namespace thesing
             switch (code)
             {
                 case 0:
-                    Home home = new Home();
+                    Home home = new Home(user.info);
                     home.Show();
+                    this.Close();
                     break;
                 case -1: MessageBox.Show("用户不存在"); break;
                 case -2: MessageBox.Show("密码或账号错误"); break;
