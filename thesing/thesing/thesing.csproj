@@ -78,6 +78,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="source\style.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="page\Page1.xaml.cs">
@@ -120,11 +124,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Resource Include="source\thesing-logo-h-white.png" />
-    <Resource Include="source\thesing-logo-h.png" />
-    <Resource Include="source\thesing-logo-v-white.png" />
-    <Resource Include="source\thesing-logo-v.png" />
-    <Resource Include="source\thesing-logo.png" />
+    <Resource Include="source\image\thesing-logo-h-white.png" />
+    <Resource Include="source\image\thesing-logo-h.png" />
+    <Resource Include="source\image\thesing-logo-v-white.png" />
+    <Resource Include="source\image\thesing-logo-v.png" />
+    <Resource Include="source\image\thesing-logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

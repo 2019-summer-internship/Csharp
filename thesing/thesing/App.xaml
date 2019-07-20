@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:thesing"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="source/style.xaml"/>
     </Application.Resources>
 </Application>

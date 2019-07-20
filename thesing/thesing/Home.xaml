@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:thesing"
         mc:Ignorable="d"
         Title="Home" Height="720" Width="1080">
-    <Grid ShowGridLines="True">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>
             <ColumnDefinition Width="830"/>
@@ -14,7 +14,18 @@
         
         <!-- 左边导航栏 -->
         <Rectangle Grid.Column="0" Fill="DarkCyan"/>
-        <Image Grid.Column="0" Name="avatar" Margin="60,75,60,505" Source="Source/thesing-logo.png"/>
+        <Image Grid.Column="0" Name="avatar" Margin="60,75,60,505" Source="source/image/thesing-logo.png"/>
+        
+        
+        <Menu Margin="0,250,0,80">
+            <Menu.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Width="250"/>
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
+            <MenuItem Header="我的题目"/>
+            <MenuItem Header="我的导师"/>
+        </Menu>
 
 
         <!-- 右边frame页框 -->
