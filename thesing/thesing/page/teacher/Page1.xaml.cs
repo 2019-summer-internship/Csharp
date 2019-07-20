@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace thesing.page
+namespace thesing.page.teacher
 {
     /// <summary>
     /// Page1.xaml 的交互逻辑
