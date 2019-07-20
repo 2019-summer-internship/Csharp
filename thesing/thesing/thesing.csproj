@@ -59,6 +59,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="log.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,6 +73,9 @@
     </Compile>
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="log.xaml.cs">
+      <DependentUpon>log.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -87,6 +94,27 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="page\Sudent\Student_Teacher.xaml">
+    <Page Include="page\detail_teacher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\school\achievement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\school\mail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\school\schdule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\school\teacher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\school\project.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -107,6 +135,23 @@
     </Compile>
     <Compile Include="page\Sudent\Student_Teacher.xaml.cs">
       <DependentUpon>Student_Teacher.xaml</DependentUpon>
+    <Compile Include="page\detail_teacher.xaml.cs">
+      <DependentUpon>detail_teacher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\school\achievement.xaml.cs">
+      <DependentUpon>achievement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\school\mail.xaml.cs">
+      <DependentUpon>mail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\school\schdule.xaml.cs">
+      <DependentUpon>schdule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\school\teacher.xaml.cs">
+      <DependentUpon>teacher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\school\project.xaml.cs">
+      <DependentUpon>project.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -150,6 +195,7 @@
     <Resource Include="page\Sudent\Stu_image\people.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="thesing-logo-h-white.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="source\image\thesing-logo-h-white.png" />

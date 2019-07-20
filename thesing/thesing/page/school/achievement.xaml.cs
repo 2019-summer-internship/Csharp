@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace thesing.page
+namespace thesing.page.school
 {
     /// <summary>
-    /// School_schdule.xaml 的交互逻辑
+    /// Achievement.xaml 的交互逻辑
     /// </summary>
-    public partial class School_schdule : Page
+    public partial class Achievement : Page
     {
-        public School_schdule()
+        public Achievement()
         {
             InitializeComponent();
         }
