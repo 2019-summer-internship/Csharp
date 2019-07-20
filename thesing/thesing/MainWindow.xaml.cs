@@ -31,12 +31,12 @@ namespace thesing
             string account = this.account.Text;
             string pwd = this.password.Text;
 
-            if (account == null)
+            if (account.Length <= 0)
             {
                 MessageBox.Show("账号不能为空");
                 return;
             }
-            if (pwd == null)
+            if (pwd.Length <= 0)
             {
                 MessageBox.Show("密码不能为空");
                 return;
