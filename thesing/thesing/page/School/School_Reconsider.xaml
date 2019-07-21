@@ -13,22 +13,22 @@
             <RowDefinition Height="41*"/>
             <RowDefinition Height="184*"/>
         </Grid.RowDefinitions>
-        <Image HorizontalAlignment="Left" Height="42" Margin="10,10,0,0" VerticalAlignment="Top" Width="54" Source="/source/image/thesing-logo-h-white.png" OpacityMask="#FF121415"/>
+        <Image HorizontalAlignment="Left" Height="42" Margin="10,10,0,0" VerticalAlignment="Top" Width="54" Source="/source/image/people.ico" OpacityMask="#FF121415"/>
         <Label Content="2019-7-20" HorizontalAlignment="Left" Margin="195,10,0,0" VerticalAlignment="Top" Width="312"/>
         <Label HorizontalAlignment="Left" Margin="29,23.4,0,0" Grid.Row="1" VerticalAlignment="Top">
-            <Label Content="提出者" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Content="提出者" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Background="#FF66CCFF"/>
         </Label>
-        <Label Content="提阿是姑姑家在报给我" HorizontalAlignment="Left" Margin="143,28.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="364" Height="58"/>
-        <Label Content="质疑项" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,82.4,0,0" Grid.Row="1"/>
-        <Label Content="阿放进去覅偶" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="143,91.4,0,0" Grid.Row="1" Width="364" Height="61"/>
+        <Label Content="质疑项" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,82.4,0,0" Grid.Row="1" FontSize="20" Background="#FF66CCFF"/>
         <Label HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,148.4,0,0" Grid.Row="1" Width="56">
-            <Label Content="提出者" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="56"/>
+            <Label Content="提出者" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="56" FontSize="20" Background="#FF66CCFF"/>
         </Label>
-        <Label Content="提案件交定金即可到达" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="143,175.8,0,0" Grid.Row="1" Width="353" Height="49"/>
-        <Label Content="提出者" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,259.8,0,0" Grid.Row="1"/>
-        <TextBox HorizontalAlignment="Left" Height="96" Margin="172,285.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" Background="Snow" Grid.RowSpan="10"/>
+        <Label Content="提出者" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="29,259.8,0,0" Grid.Row="1" FontSize="20" Background="#FF66CCFF"/>
         <Button Content="同意" HorizontalAlignment="Left" Margin="172,473.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" FontSize="20" Background="#FF66CCFF"/>
         <Button Content="驳回" HorizontalAlignment="Left" Margin="507,473.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFCCCCFF" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="147,9.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="60" FontSize="20" Text="刚发过给发货过郭德纲GDGAFBVBBAGWF"/>
+        <TextBlock HorizontalAlignment="Left" Margin="147,87.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="60" FontSize="20" Text="刚发过给发货过郭德纲GDGAFBVBBAGWF"/>
+        <TextBlock HorizontalAlignment="Left" Margin="147,177.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="60" FontSize="20" Text="刚发过给发货过郭德纲GDGAFBVBBAGWF"/>
+        <TextBlock HorizontalAlignment="Left" Margin="147,274.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="60" FontSize="20" Text="刚发过给发货过郭德纲GDGAFBVBBAGWF"/>
 
     </Grid>
 </Page>

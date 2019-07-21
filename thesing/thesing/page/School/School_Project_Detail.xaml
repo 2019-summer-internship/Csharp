@@ -31,7 +31,7 @@
        
 
         <TextBox HorizontalAlignment="Left" Height="79" Margin="167,10,0,0" Grid.Row="3" TextWrapping="Wrap" Text="XXHUJKJFK" VerticalAlignment="Top" Width="424" />
-        <Button Content="驳回" HorizontalAlignment="Left" Margin="642,114.2,0,0" Grid.Row="3" VerticalAlignment="Top" Width="75" Background="#FF66CCFF"/>
+        <Button Content="驳回" HorizontalAlignment="Left" Margin="642,114.2,0,0" Grid.Row="3" VerticalAlignment="Top" Width="75" Background="#FF3E3E40"/>
         <Button Content="同意" HorizontalAlignment="Left" Margin="859,114.2,0,0" Grid.Row="3" VerticalAlignment="Top" Width="75" Background="#FFCCCCFF"/>
 
     </Grid>
