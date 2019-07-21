@@ -47,12 +47,12 @@ namespace thesing
         public void RenderStudentUI(Model.User user)
         {
             nickname.Text = user.name;
-            Student_process_menu.Visibility = Visibility.Visible;
-            Student_project_menu.Visibility = Visibility.Visible;
-            Student_score_menu.Visibility = Visibility.Visible;
-            Student_teacher_menu.Visibility = Visibility.Visible;
-            Student_project_menu.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#EBEBEB"));
-            Student_project_menu.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#333333"));
+            Student_Process_menu.Visibility = Visibility.Visible;
+            Student_Project_menu.Visibility = Visibility.Visible;
+            Student_Grade_menu.Visibility = Visibility.Visible;
+            Student_Teacher_menu.Visibility = Visibility.Visible;
+            Student_Project_menu.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#EBEBEB"));
+            Student_Project_menu.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#333333"));
 
             
         }
@@ -64,11 +64,11 @@ namespace thesing
         public void RenderTeacherUI(Model.User user)
         {
             nickname.Text = user.name;
-            Teacher_examine_menu.Visibility = Visibility.Visible;
-            Teacher_project_menu.Visibility = Visibility.Visible;
-            Teacher_student_menu.Visibility = Visibility.Visible;
-            Teacher_project_menu.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#EBEBEB"));
-            Teacher_project_menu.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#333333"));
+            Teacher_Project_menu.Visibility = Visibility.Visible;
+            Teacher_Student_menu.Visibility = Visibility.Visible;
+            Teacher_Examine_menu.Visibility = Visibility.Visible;
+            Teacher_Project_menu.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#EBEBEB"));
+            Teacher_Project_menu.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#333333"));
         }
         
         /// <summary>
@@ -78,12 +78,12 @@ namespace thesing
         public void RenderSchoolUI(Model.User user)
         {
             nickname.Text = user.name;
-            School_check_menu.Visibility = Visibility.Visible;
-            School_reconsider_menu.Visibility = Visibility.Visible;
-            School_schedule_menu.Visibility = Visibility.Visible;
-            School_teacher_menu.Visibility = Visibility.Visible;
-            School_schedule_menu.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#EBEBEB"));
-            School_schedule_menu.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#333333"));
+            School_Schedule_menu.Visibility = Visibility.Visible;
+            School_Teacher_menu.Visibility = Visibility.Visible;
+            School_Project_menu.Visibility = Visibility.Visible;
+            School_Reconsider_menu.Visibility = Visibility.Visible;
+            School_Schedule_menu.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#EBEBEB"));
+            School_Schedule_menu.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#333333"));
         }
 
         /// <summary>
@@ -93,10 +93,10 @@ namespace thesing
         public void RenderUniversityUI(Model.User user)
         {
             nickname.Text = user.name;
-            University_plan_menu.Visibility = Visibility.Visible;
-            University_school_menu.Visibility = Visibility.Visible;
-            University_school_menu.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#EBEBEB"));
-            University_school_menu.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#333333"));
+            //University_plan_menu.Visibility = Visibility.Visible;
+            University_School_menu.Visibility = Visibility.Visible;
+            University_School_menu.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#EBEBEB"));
+            University_School_menu.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#333333"));
         }
 
         /// <summary>

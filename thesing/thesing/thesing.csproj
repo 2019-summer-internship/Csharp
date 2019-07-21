@@ -81,99 +81,67 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="page\Detail\Page1.xaml">
+    <Page Include="page\School\School_Reconsider.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\School\Page1.xaml">
+    <Page Include="page\School\School_Project_Detail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\School\School_Achievement.xaml">
+    <Page Include="page\School\School_Project.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\School\School_detail_project.xaml">
+    <Page Include="page\School\School_Schedule.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\School\School_mail.xaml">
+    <Page Include="page\School\School_Teacher.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\School\School_project.xaml">
+    <Page Include="page\Student\Student_Grade.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\School\School_shdule.xaml">
+    <Page Include="page\Student\Student_Process.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\School\School_teacher.xaml">
+    <Page Include="page\Student\Student_Project.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\Student\Student_grade.xaml">
+    <Page Include="page\Student\Student_Teacher.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\Student\Student_process.xaml">
+    <Page Include="page\Teacher\Teacher_Examine.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\Student\Student_project.xaml">
+    <Page Include="page\Teacher\Teacher_Examine_Detail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\Student\Student_teacher.xaml">
+    <Page Include="page\Detail\Detail_Mail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\Teacher\Teacher_Judge.xaml">
+    <Page Include="page\Teacher\Teacher_Project.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\Teacher\Teacher_JudgeMyStudents.xaml">
+    <Page Include="page\Teacher\Teacher_Student.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\Teacher\Teacher_JudgeOthers.xaml">
+    <Page Include="page\University\University_School.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\Teacher\Teacher_Mail.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="page\Teacher\Teacher_MyProjects.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="page\Teacher\Teacher_MyStudents.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="page\Teacher\Teacher_ProjectList.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="page\Teacher\Teacher_SMail.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="page\Teacher\Teacher_StudentsList.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="page\University\Page1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="page\university\University_MySchools.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="page\university\Unversity_SchoolList.xaml">
+    <Page Include="page\University\University_School_Detail.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -183,77 +151,53 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="page\Detail\Page1.xaml.cs">
-      <DependentUpon>Page1.xaml</DependentUpon>
+    <Compile Include="page\School\School_Reconsider.xaml.cs">
+      <DependentUpon>School_Reconsider.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\School\Page1.xaml.cs">
-      <DependentUpon>Page1.xaml</DependentUpon>
+    <Compile Include="page\School\School_Project_Detail.xaml.cs">
+      <DependentUpon>School_Project_Detail.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\School\School_Achievement.xaml.cs">
-      <DependentUpon>School_Achievement.xaml</DependentUpon>
+    <Compile Include="page\School\School_Project.xaml.cs">
+      <DependentUpon>School_Project.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\School\School_detail_project.xaml.cs">
-      <DependentUpon>School_detail_project.xaml</DependentUpon>
+    <Compile Include="page\School\School_Schedule.xaml.cs">
+      <DependentUpon>School_Schedule.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\School\School_mail.xaml.cs">
-      <DependentUpon>School_mail.xaml</DependentUpon>
+    <Compile Include="page\School\School_Teacher.xaml.cs">
+      <DependentUpon>School_Teacher.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\School\School_project.xaml.cs">
-      <DependentUpon>School_project.xaml</DependentUpon>
+    <Compile Include="page\Student\Student_Grade.xaml.cs">
+      <DependentUpon>Student_Grade.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\School\School_shdule.xaml.cs">
-      <DependentUpon>School_shdule.xaml</DependentUpon>
+    <Compile Include="page\Student\Student_Process.xaml.cs">
+      <DependentUpon>Student_Process.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\School\School_teacher.xaml.cs">
-      <DependentUpon>School_teacher.xaml</DependentUpon>
+    <Compile Include="page\Student\Student_Project.xaml.cs">
+      <DependentUpon>Student_Project.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\Student\Student_grade.xaml.cs">
-      <DependentUpon>Student_grade.xaml</DependentUpon>
+    <Compile Include="page\Student\Student_Teacher.xaml.cs">
+      <DependentUpon>Student_Teacher.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\Student\Student_process.xaml.cs">
-      <DependentUpon>Student_process.xaml</DependentUpon>
+    <Compile Include="page\Teacher\Teacher_Examine.xaml.cs">
+      <DependentUpon>Teacher_Examine.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\Student\Student_project.xaml.cs">
-      <DependentUpon>Student_project.xaml</DependentUpon>
+    <Compile Include="page\Teacher\Teacher_Examine_Detail.xaml.cs">
+      <DependentUpon>Teacher_Examine_Detail.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\Student\Student_teacher.xaml.cs">
-      <DependentUpon>Student_teacher.xaml</DependentUpon>
+    <Compile Include="page\Detail\Detail_Mail.xaml.cs">
+      <DependentUpon>Detail_Mail.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\Teacher\Teacher_Judge.xaml.cs">
-      <DependentUpon>Teacher_Judge.xaml</DependentUpon>
+    <Compile Include="page\Teacher\Teacher_Project.xaml.cs">
+      <DependentUpon>Teacher_Project.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\Teacher\Teacher_JudgeMyStudents.xaml.cs">
-      <DependentUpon>Teacher_JudgeMyStudents.xaml</DependentUpon>
+    <Compile Include="page\Teacher\Teacher_Student.xaml.cs">
+      <DependentUpon>Teacher_Student.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\Teacher\Teacher_JudgeOthers.xaml.cs">
-      <DependentUpon>Teacher_JudgeOthers.xaml</DependentUpon>
+    <Compile Include="page\University\University_School.xaml.cs">
+      <DependentUpon>University_School.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\Teacher\Teacher_Mail.xaml.cs">
-      <DependentUpon>Teacher_Mail.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="page\Teacher\Teacher_MyProjects.xaml.cs">
-      <DependentUpon>Teacher_MyProjects.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="page\Teacher\Teacher_MyStudents.xaml.cs">
-      <DependentUpon>Teacher_MyStudents.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="page\Teacher\Teacher_ProjectList.xaml.cs">
-      <DependentUpon>Teacher_ProjectList.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="page\Teacher\Teacher_SMail.xaml.cs">
-      <DependentUpon>Teacher_SMail.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="page\Teacher\Teacher_StudentsList.xaml.cs">
-      <DependentUpon>Teacher_StudentsList.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="page\University\Page1.xaml.cs">
-      <DependentUpon>Page1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="page\university\University_MySchools.xaml.cs">
-      <DependentUpon>University_MySchools.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="page\university\Unversity_SchoolList.xaml.cs">
-      <DependentUpon>Unversity_SchoolList.xaml</DependentUpon>
+    <Compile Include="page\University\University_School_Detail.xaml.cs">
+      <DependentUpon>University_School_Detail.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

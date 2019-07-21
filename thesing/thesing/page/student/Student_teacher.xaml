@@ -25,7 +25,7 @@
 
 
         <Button  Background="Black" Grid.Row="2" Name="button4" Opacity="0"  FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.536,0.414" Margin="560,21,203.4,29"  />
-        <Image HorizontalAlignment="Left" Height="113" Margin="0,35,0,0" VerticalAlignment="Center" Width="107" Source="/source/image/people.ico"/>
+        <Image HorizontalAlignment="Left" Height="113" Margin="0,30,0,0" VerticalAlignment="Center" Width="107" Source="/source/image/people.ico"/>
         <ScrollViewer Height="460" Margin="0,0,0.4,0" Grid.Row="1" VerticalAlignment="Top"/>
 
 

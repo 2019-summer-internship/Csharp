@@ -28,28 +28,25 @@
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Width="250"/>
                 </ItemsPanelTemplate>
             </Menu.ItemsPanel>
-            <MenuItem x:Name="Student_project_menu" Header="我的题目" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
-            <MenuItem x:Name="Student_teacher_menu" Header="我的导师" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
-            <MenuItem x:Name="Student_score_menu" Header="我的成绩" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
-            <MenuItem x:Name="Student_process_menu" Header="我的进度" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
-            <MenuItem x:Name="Teacher_project_menu" Header="我的题目" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
-            <MenuItem x:Name="Teacher_student_menu" Header="我的学生" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
-            <MenuItem x:Name="Teacher_examine_menu" Header="毕设评阅" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
-            <MenuItem x:Name="School_schedule_menu" Header="学院日程" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
-            <MenuItem x:Name="School_teacher_menu" Header="学院导师" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
-            <MenuItem x:Name="School_check_menu" Header="题目审核" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
-            <MenuItem x:Name="School_reconsider_menu" Header="成绩复议" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
-            <MenuItem x:Name="University_school_menu" Header="各个学院" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
-            <MenuItem x:Name="University_plan_menu" Header="校方安排" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
-            <MenuItem x:Name="Datail_mail_menu" Header="通知" Style="{StaticResource mainMenuItemStyle}" Visibility="Visible" Click="mainMenuClick"/>
+            <MenuItem x:Name="Student_Project_menu" Header="我的题目" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
+            <MenuItem x:Name="Student_Teacher_menu" Header="我的导师" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
+            <MenuItem x:Name="Student_Grade_menu" Header="我的成绩" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
+            <MenuItem x:Name="Student_Process_menu" Header="我的进度" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
+            <MenuItem x:Name="Teacher_Project_menu" Header="我的题目" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
+            <MenuItem x:Name="Teacher_Student_menu" Header="我的学生" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
+            <MenuItem x:Name="Teacher_Examine_menu" Header="毕设评阅" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
+            <MenuItem x:Name="School_Schedule_menu" Header="学院日程" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
+            <MenuItem x:Name="School_Teacher_menu" Header="学院导师" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
+            <MenuItem x:Name="School_Project_menu" Header="题目审核" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
+            <MenuItem x:Name="School_Reconsider_menu" Header="成绩复议" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
+            <MenuItem x:Name="University_School_menu" Header="各个学院" Style="{StaticResource mainMenuItemStyle}" Click="mainMenuClick"/>
+            <MenuItem x:Name="Detail_Mail_menu" Header="通知" Style="{StaticResource mainMenuItemStyle}" Visibility="Visible" Click="mainMenuClick"/>
         </Menu>
 
         <Image Margin="0,645,0,10" Source="source/image/thesing-logo-h-white.png" Panel.ZIndex="100"/>
 
 
         <!-- 右边frame页框 -->
-        <Frame x:Name="pageFrame" Grid.Column="1" BorderBrush="Blue">
-
-        </Frame>
+        <Frame x:Name="pageFrame" BorderBrush="Blue" Height="720" Width="830" Margin="250,-30,6,0.4" Grid.ColumnSpan="2" />
     </Grid>
 </Window>
