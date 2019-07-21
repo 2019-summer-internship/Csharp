@@ -10,6 +10,45 @@
 
     <Grid RenderTransformOrigin="0.381,0.428">
         <Frame Content="Frame"  Margin="250,0,-0.4,0" Source="llll"/>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" FrozenColumnCount="1" Grid.Row="1" Grid.Column="2" Margin="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="员工号" Binding="{Binding Path=No}" IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTextColumn Header="姓名" Binding="{Binding Name}" IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTextColumn Header="电子邮件" Binding="{Binding Email}"  IsReadOnly="True"></DataGridTextColumn>
+                <DataGridTextColumn Header="出生日期" Binding="{Binding Birthday,  StringFormat={}{0:yyyy/MM/dd/}}" IsReadOnly="True"></DataGridTextColumn>
+                <!--<DataGridTextColumn Header="职务" Binding="{Binding Type}" IsReadOnly="True"></DataGridTextColumn>-->
+                <DataGridComboBoxColumn x:Name="dgcb" Header="职务" SelectedValueBinding="{Binding Path=Type}"></DataGridComboBoxColumn>
+                <DataGridCheckBoxColumn x:Name="dgCheckBox" Header="是否删除" Binding="{Binding IsDel}"/>
+                <DataGridTemplateColumn Header="操作">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="修改"/>
+                                <Button Content="删除"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="照片">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Stretch="None" Source="{Binding Path=ProductImagePath}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="LightBlue" />
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="LightGray"/>
+                            <Setter Property="Foreground" Value="Green"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
+        </DataGrid>
 
     </Grid>
 </Page>
