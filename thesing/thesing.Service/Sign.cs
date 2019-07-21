@@ -51,7 +51,7 @@ namespace thesing.Service
             //检查用户密码是否正确
             table = database.ExecuteDataTable(sql, parameter);
 
-            if (table != null)
+            if (table.Rows.Count == 1)
             {
                 user.id = table.Rows[0]["id"].ToString();
                 user.name = table.Rows[0]["name"].ToString();
