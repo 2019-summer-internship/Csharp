@@ -12,8 +12,8 @@
         <RowDefinition Height="187*"/>
         <RowDefinition Height="79*"/>
     </Grid.RowDefinitions>
-    <Button Content="登录" HorizontalAlignment="Left" Margin="70,30.8,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="Button_Click" Background="#FF66CCFF" FontSize="20" FontFamily="MV Boli" FontWeight="Bold"/>
-    <Button Content="取消" HorizontalAlignment="Left" Margin="296,30.8,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Background="#FFCCCCFF" FontSize="20" FontFamily="MV Boli" FontWeight="Bold"/>
+    <Button Content="登录" HorizontalAlignment="Left" Margin="70,30.8,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75"  Background="#FF66CCFF" FontSize="20" FontFamily="MV Boli" FontWeight="Bold"/>
+    <Button Content="取消" HorizontalAlignment="Left" Margin="296,30.8,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75"  Background="#FFCCCCFF" FontSize="20" FontFamily="MV Boli" FontWeight="Bold"/>
     <Label Content="账号" HorizontalAlignment="Left" Margin="40,24,0,0" Grid.Row="1" VerticalAlignment="Top"/>
     <Label Content="密码" HorizontalAlignment="Left" Margin="40,79,0,0" Grid.Row="1" VerticalAlignment="Top"/>
     <Label Content="验证码" HorizontalAlignment="Left" Margin="40,140,0,0" Grid.Row="1" VerticalAlignment="Top"/>

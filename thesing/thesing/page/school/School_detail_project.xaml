@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:thesing.page.school"
       mc:Ignorable="d" 
-      d:DesignHeight="720" d:DesignWidth="1080"
+      d:DesignHeight="720" d:DesignWidth="830"
       Title="School_detail_project" Background="#FFFCF7F7">
 
     <Grid>
@@ -27,14 +27,10 @@
         <Label Content="XXXXXXXXXXXXXXX" HorizontalAlignment="Left" Height="50" Margin="223,94.4,0,0" Grid.Row="2" VerticalAlignment="Top" Width="442"/>
         <Label Content="具体要求" HorizontalAlignment="Left" Margin="10,138.4,0,0" Grid.Row="2" VerticalAlignment="Top"/>
         <Label Content="XXXXXXXXXXXXXXX" HorizontalAlignment="Left" Height="50" Margin="223,169.4,0,0" Grid.Row="2" VerticalAlignment="Top" Width="442"/>
-        <ListView HorizontalAlignment="Left" Height="48" Margin="10,223.4,0,0" Grid.Row="2" VerticalAlignment="Top" Width="129" SelectionChanged="ListView_SelectionChanged">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <TextBox HorizontalAlignment="Left" Height="79" Margin="167,10,0,0" Grid.Row="3" TextWrapping="Wrap" Text="XXHUJKJFK" VerticalAlignment="Top" Width="424" TextChanged="TextBox_TextChanged"/>
+        <ListView HorizontalAlignment="Left" Height="48" Margin="0,225.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="129" />
+       
+
+        <TextBox HorizontalAlignment="Left" Height="79" Margin="167,10,0,0" Grid.Row="3" TextWrapping="Wrap" Text="XXHUJKJFK" VerticalAlignment="Top" Width="424" />
         <Button Content="驳回" HorizontalAlignment="Left" Margin="642,114.2,0,0" Grid.Row="3" VerticalAlignment="Top" Width="75" Background="#FF66CCFF"/>
         <Button Content="同意" HorizontalAlignment="Left" Margin="859,114.2,0,0" Grid.Row="3" VerticalAlignment="Top" Width="75" Background="#FFCCCCFF"/>
 

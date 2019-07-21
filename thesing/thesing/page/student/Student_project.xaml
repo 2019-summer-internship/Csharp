@@ -1,0 +1,30 @@
+﻿<Page x:Class="thesing.page.student.Student_project"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:thesing.page.student"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="830"
+      Title="Student_project">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="161*"/>
+            <RowDefinition Height="126*"/>
+            <RowDefinition Height="362*"/>
+        </Grid.RowDefinitions>
+        <Label Content="我的题目" HorizontalAlignment="Left" Margin="10,10,0,24.2" VerticalAlignment="Center" FontSize="24" Height="37" Width="106"/>
+        <Label Content="其它题目" HorizontalAlignment="Left" Margin="10,45,0,37.4" Grid.Row="2" VerticalAlignment="Center" FontSize="24" Height="44" Width="106" RenderTransformOrigin="0.574,3.74"/>
+        <Border  CornerRadius="22" Margin="116,49,450.4,33.4" BorderThickness="1" BorderBrush="#FF737070" Grid.Row="2" HorizontalAlignment="Center" Width="264">
+            <TextBlock  TextWrapping="Wrap" x:Name="SearchContent" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-0.8,5.2,-0.8,5.4" Width="264"  />
+        </Border>
+        <ComboBox Name="SearchConType" HorizontalAlignment="Left" Margin="453,49,0,0" Grid.Row="2" VerticalAlignment="Top" Width="130" Height="44" FontSize="24" FlowDirection="RightToLeft"  DisplayMemberPath="Name" SelectedValuePath="No" SelectedValue="{Binding Type}" ItemsSource="{Binding types}" IsEditable="False" Text="{Binding types}" RenderTransformOrigin="1.003,0.636" />
+        <Button Content="搜索" Background="#FF00FFBA" HorizontalAlignment="Left" Margin="706,49,0,0" Grid.Row="2" VerticalAlignment="Top" Width="86" Height="34" FontSize="24"/>
+        <ScrollBar Margin="0,0.6,0.4,-1" Grid.Row="3" VerticalAlignment="Top" Width="Auto" Height="362"/>
+        <ScrollBar HorizontalAlignment="Left" Margin="497,148.6,0,0" Grid.Row="3" VerticalAlignment="Top" Height="33" Width="17"/>
+
+
+    </Grid>
+</Page>

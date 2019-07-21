@@ -113,7 +113,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="page\student\Page1.xaml">
+    <Page Include="page\student\Student_grade.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\student\Student_process.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\student\Student_project.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\student\Student_teacher.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -155,8 +167,17 @@
     <Compile Include="page\school\School_teacher.xaml.cs">
       <DependentUpon>School_teacher.xaml</DependentUpon>
     </Compile>
-    <Compile Include="page\student\Page1.xaml.cs">
-      <DependentUpon>Page1.xaml</DependentUpon>
+    <Compile Include="page\student\Student_grade.xaml.cs">
+      <DependentUpon>Student_grade.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\student\Student_process.xaml.cs">
+      <DependentUpon>Student_process.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\student\Student_project.xaml.cs">
+      <DependentUpon>Student_project.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\student\Student_teacher.xaml.cs">
+      <DependentUpon>Student_teacher.xaml</DependentUpon>
     </Compile>
     <Compile Include="page\teacher\Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>
@@ -211,6 +232,10 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="source\image\thesing-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="source\image\cirle.ico" />
+    <Resource Include="source\image\people.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
