@@ -59,6 +59,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,6 +73,9 @@
     </Compile>
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="login.xaml.cs">
+      <DependentUpon>login.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -83,6 +90,26 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="page\school\School_Achievement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\school\School_detail_project.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\school\School_mail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\school\School_project.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\school\School_shdule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="page\school\School_teacher.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -112,6 +139,21 @@
     </Compile>
     <Compile Include="page\school\School_Achievement.xaml.cs">
       <DependentUpon>School_Achievement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\school\School_detail_project.xaml.cs">
+      <DependentUpon>School_detail_project.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\school\School_mail.xaml.cs">
+      <DependentUpon>School_mail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\school\School_project.xaml.cs">
+      <DependentUpon>School_project.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\school\School_shdule.xaml.cs">
+      <DependentUpon>School_shdule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\school\School_teacher.xaml.cs">
+      <DependentUpon>School_teacher.xaml</DependentUpon>
     </Compile>
     <Compile Include="page\student\Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>

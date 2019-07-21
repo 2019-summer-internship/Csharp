@@ -1,0 +1,33 @@
+﻿<Page x:Class="thesing.page.school.School_teacher"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:thesing.page.school"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="830"
+      Title="School_teacher" Background="#FFF6F6F6">
+
+    <Grid Margin="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="120*"/>
+            <RowDefinition Height="120*"/>
+            <RowDefinition Height="120*"/>
+        </Grid.RowDefinitions>
+        <Border CornerRadius="20" Margin="33,43,438.4,24.6" BorderThickness="1" BorderBrush="#FF737070" HorizontalAlignment="Center" Height=" 50" Width="359">
+            <TextBlock TextWrapping="Wrap"  FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+        <ComboBox HorizontalAlignment="Left" Margin="434,43,0,0" VerticalAlignment="Top" Width="130" Height="44" FontSize="24" FlowDirection="RightToLeft" RenderTransformOrigin="0.613,0.994">
+            <Button Content="导师姓名" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width="130"/>
+            <Button Content="涉及领域" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width="130"/>
+            <Button Content="学院" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width=" 130"/>
+            <Button Content="状态" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width=" 130"/>
+        </ComboBox>
+        <Button Content="搜索" HorizontalAlignment="Left" Margin="635,53,0,0" VerticalAlignment="Top" Width="86" Height="34" FontSize="24"/>
+        <Border CornerRadius="22" Margin="138,77.6,146.4,38.2" BorderThickness="1" BorderBrush="#FF737070" Grid.Row="2" HorizontalAlignment="Center" Width="546" Height="85"/>
+        <Border CornerRadius="22" Margin="138,61.4,146.4,54.4" BorderThickness="1" BorderBrush="#FF737070" Grid.Row="1" HorizontalAlignment="Center" Width="546" Height="85"/>
+        <Border CornerRadius="22" Margin="138,33.8,146.4,82" BorderThickness="1" BorderBrush="#FF737070" Grid.Row="3" HorizontalAlignment="Center" Width="546" Height="85"/>
+
+    </Grid>
+</Page>
