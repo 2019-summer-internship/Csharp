@@ -54,8 +54,7 @@ namespace thesing
             Student_Teacher_menu.Visibility = Visibility.Visible;
             Student_Project_menu.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#EBEBEB"));
             Student_Project_menu.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#333333"));
-
-            
+            Student_Project_menu.RaiseEvent(new RoutedEventArgs(MenuItem.ClickEvent, Student_Project_menu));
         }
 
         /// <summary>
@@ -70,6 +69,7 @@ namespace thesing
             Teacher_Examine_menu.Visibility = Visibility.Visible;
             Teacher_Project_menu.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#EBEBEB"));
             Teacher_Project_menu.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#333333"));
+            Teacher_Project_menu.RaiseEvent(new RoutedEventArgs(MenuItem.ClickEvent, Teacher_Project_menu));
         }
         
         /// <summary>
@@ -85,6 +85,7 @@ namespace thesing
             School_Reconsider_menu.Visibility = Visibility.Visible;
             School_Schedule_menu.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#EBEBEB"));
             School_Schedule_menu.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#333333"));
+            School_Schedule_menu.RaiseEvent(new RoutedEventArgs(MenuItem.ClickEvent, School_Schedule_menu));
         }
 
         /// <summary>
@@ -98,6 +99,7 @@ namespace thesing
             University_School_menu.Visibility = Visibility.Visible;
             University_School_menu.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#EBEBEB"));
             University_School_menu.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#333333"));
+            University_School_menu.RaiseEvent(new RoutedEventArgs(MenuItem.ClickEvent, University_School_menu));
         }
 
         /// <summary>
@@ -118,11 +120,10 @@ namespace thesing
 
             string[] names = menuItem.Name.Split('_');
             string page = "/page/" + names[0] + "/" + names[0] + "_" + names[1] + ".xaml";
+            //MessageBox.Show(page);
 
             pageFrame.Navigate(new Uri(page, UriKind.Relative));
-
-
-
+            
         }
 
         /// <summary>
