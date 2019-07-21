@@ -28,6 +28,13 @@ namespace thesing.Service
             return result;
         }
 
+        public List<Model.Achievement> GetAchievementById(List<string> idList)
+        {
+            List<Model.Achievement> result = new List<Model.Achievement>();
+
+            return result;
+        }
+
         /// <summary>
         /// 创建成绩
         /// </summary>

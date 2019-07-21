@@ -41,7 +41,14 @@ namespace thesing.Service
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
-        public List<Model.Mail> GetMailBySender(string sender, string receiver)
+        public List<Model.Mail> GetMailBySender(string sender)
+        {
+            List<Model.Mail> result = new List<Model.Mail>();
+
+            return result;
+        }
+
+        public List<Model.Mail> GetMailByReciver(string reciver)
         {
             List<Model.Mail> result = new List<Model.Mail>();
 

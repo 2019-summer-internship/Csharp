@@ -36,6 +36,13 @@ namespace thesing.Service
             return 0;
         }
 
+        public Model.Project GetProjectById(string id)
+        {
+            Model.Project result = new Model.Project();
+
+            return result;
+        }
+
         /// <summary>
         /// 通过出题教师查询题目
         /// </summary>
