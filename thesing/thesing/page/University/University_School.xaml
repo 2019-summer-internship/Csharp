@@ -8,35 +8,42 @@
       d:DesignHeight="720" d:DesignWidth="830"
       Title="University_MySchools">
 
-    <Grid>
-        <Grid>
-            <Grid Background="#FFF0F8FA">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="17*"/>
-                    <RowDefinition Height="163*"/>
-                </Grid.RowDefinitions>
-                <Border BorderBrush="Blue" BorderThickness="1" HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" VerticalAlignment="Top" Width="450" CornerRadius="10">
-                    <TextBox x:Name="textBox1" BorderThickness="0" HorizontalAlignment="Left" Height="50" Margin="8,9.667,0,0" TextWrapping="Wrap" Text="内容" VerticalAlignment="Top" Width="429" FontSize="36"/>
-                </Border>
-                <Border BorderBrush="Blue" BorderThickness="1" HorizontalAlignment="Left" Height="50" Margin="480,10,0,0" VerticalAlignment="Top" Width="150" CornerRadius="10">
-                    <TextBox x:Name="textBox2" BorderThickness="0" HorizontalAlignment="Left" Height="50" Margin="8,9.667,0,0" TextWrapping="Wrap" Text="关键字" VerticalAlignment="Top" Width="150" FontSize="36"/>
-                </Border>
-                <Border BorderBrush="Blue" BorderThickness="1" HorizontalAlignment="Left" Height="50" Margin="647,10,0,0" VerticalAlignment="Top" Width="145" CornerRadius="10">
-                    <TextBox x:Name="textBox3" BorderThickness="0" HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" Text="搜索" VerticalAlignment="Top" Width="145" Margin="8,9.667,0,0" FontSize="36"/>
-                </Border>
-                <ListView x:Name="listView" HorizontalAlignment="Left" Height="609" Margin="8,15,0,0" Grid.Row="1" VerticalAlignment="Top" Width="820">
-                    <ListView.View>
-                        <GridView>
+    <Grid Background="DarkGray">
+        <Border BorderBrush="Gray" Background="White" BorderThickness="0" HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" VerticalAlignment="Top" Width="520" CornerRadius="18">
+            <TextBox x:Name="school_search_key" BorderThickness="0" Background="{x:Null}" Padding="10,0,10,0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="内容" VerticalAlignment="Center" Width="520" FontSize="24"/>
+        </Border>
+        <Border BorderBrush="Gray" Background="White" BorderThickness="0" HorizontalAlignment="Left" Height="36" Margin="545,10,0,0" VerticalAlignment="Top" Width="150" CornerRadius="18">
+            <TextBox x:Name="school_search_type" BorderThickness="0" Background="{x:Null}" Padding="10,0,10,0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="关键字" VerticalAlignment="Center" Width="150" FontSize="20"/>
+        </Border>
+        <Button x:Name="login" HorizontalAlignment="right" VerticalContentAlignment="Top" Margin="0,10,20,674" Content="搜索" Height="36" Width="100" Background="{x:Null}" Foreground="White" FontSize="20" FontWeight="Bold">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="#ccccff" BorderThickness="0" CornerRadius="18" Background="#33CCFF">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
-                            <GridViewColumn Header="序列号" Width="120" />
-                            <GridViewColumn Header="题目名称" Width="100"/>
-                            <GridViewColumn Header="出题教师" Width="80" />
+        <!-- 下面是列表 --><!-- 直接把ItemSource绑定到.cs中的变量allSchoolInfo，这里写了就不用去代码里写绑定了，你说开发这个的程序员是多懒啊！！ -->
+        <ListBox ItemsSource="{Binding Path=allSchoolInfo}" HorizontalAlignment="Left" BorderThickness="0" Height="660" Margin="0,60,0,0" VerticalAlignment="Top" Width="830">
+            <!-- 下面写的是每一个Item的布局模板，给每个item都套一个相同的绿帽子 -->
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="local:schoolInfo"><!-- 这里将数据类型指向.cs文件中的achoolInfo类，写个local就说明是应用当前对应的.cs文件中的变量啦！！！ -->
+                    <Grid Margin="20,10,10,20" Width="790" Height="120">
+                        <Image x:Name="schoolAvatar" Source="{Binding Path=avatar}" Margin="10,10,680,10" Height="100" Width="100"><!-- 这里将图片的资源绑定到schoolInfo中的avatar数据成员 -->
+                            <Image.Clip>
+                                <RectangleGeometry RadiusX="50" RadiusY="50" Rect="0,0,100,100"/>
+                            </Image.Clip>
+                        </Image>
+                        <TextBlock x:Name="schoolName" Text="{Binding Path=name}" Margin="160,20,100,50" Height="50" FontSize="46" FontWeight="Bold"/><!-- 这里将text的内容绑定到SchoolInfo中的name数据成员 -->
+                        <ProgressBar Value="{Binding Path=process}" Margin="160,90,50,10" Height="20"/><!-- 这里将进度条的值绑定到SchoolInfo中的process数据成员 -->
+                    </Grid>
+                    <!-- 数据绑定就写完了，这还不简单 -->
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <!-- 结束模板 -->
+        </ListBox>
 
-                        </GridView>
-                    </ListView.View>
-                </ListView>
-
-            </Grid>
-        </Grid>
     </Grid>
 </Page>
