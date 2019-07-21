@@ -12,42 +12,42 @@ namespace thesing.Model
         /// <summary>
         /// 用户编号
         /// </summary>
-        public string id;
+        public string id { get; set; }
 
         /// <summary>
         /// 用户姓名
         /// </summary>
-        public string name;
+        public string name { get; set; }
 
         /// <summary>
         /// 用户性别
         /// </summary>
-        public string gender;
+        public string gender { get; set; }
 
         /// <summary>
         /// 密码
         /// </summary>
-        public string _password;
+        public string _password { get; set; }
 
         /// <summary>
         /// 头像
         /// </summary>
-        public string avatar;
+        public string avatar { get; set; }
 
         /// <summary>
         /// 学生【STUDENT】导师【TEACHER】学院【SCHOOL】校方【UNIVERSITY】
         /// </summary>
-        public string type;
+        public string type { get; set; }
 
         /// <summary>
         /// 电话
         /// </summary>
-        public string phone;
+        public string phone { get; set; }
 
         /// <summary>
         /// 邮箱号
         /// </summary>
-        public string email;
+        public string email { get; set; }
 
         public User()
         {

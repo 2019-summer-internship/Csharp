@@ -12,37 +12,39 @@ namespace thesing.Model
         /// <summary>
         /// 编号
         /// </summary>
-        public string number;
+        public string number { get; set; }
 
         /// <summary>
         /// 提出者
         /// </summary>
-        public string applicant;
+        public string applicant { get; set; }
 
         /// <summary>
         /// 处理人
         /// </summary>
-        public string manager;
+        public string manager { get; set; }
 
         /// <summary>
         /// 质疑成绩所属集合
         /// </summary>
-        public string student;
+        public string student { get; set; }
 
         /// <summary>
         /// 质疑成绩项
         /// </summary>
-        public Consititution item;
+        public Consititution item { get; set; }
 
         /// <summary>
         /// 质疑理由
         /// </summary>
-        public string reason;
+        public string reason { get; set; }
 
         /// <summary>
         /// 状态--0：未解决 UNRESOLVE，1：驳回 REJECT，2：接受 ACCEPT 
         /// </summary>
-        public string statu;
+        public string statu { get; set; }
+
+        public Reconsider() { }
 
     }
 }

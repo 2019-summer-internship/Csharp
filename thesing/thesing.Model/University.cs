@@ -12,22 +12,24 @@ namespace thesing.Model
         /// <summary>
         /// 学校编号
         /// </summary>
-        public string number;
+        public string number { get; set; }
 
         /// <summary>
         /// 学校名字
         /// </summary>
-        public string name;
+        public string name { get; set; }
 
         /// <summary>
         /// 学院的集合
         /// </summary>
-        public List<School> schools;
+        public List<School> schools { get; set; }
 
         /// <summary>
         /// 通知的集合
         /// </summary>
-        public List<Mail> mail;
+        public List<Mail> mail { get; set; }
+
+        public University() { }
 
     }
 }

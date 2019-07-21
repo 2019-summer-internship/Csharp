@@ -12,26 +12,28 @@ namespace thesing.Model
         /// <summary>
         /// 成绩组成项名称
         /// </summary>
-        public string name;
+        public string name { get; set; }
 
         /// <summary>
         /// 组成项占比
         /// </summary>
-        public float rate;
+        public float rate { get; set; }
 
         /// <summary>
         /// 得分
         /// </summary>
-        public float score;
+        public float score { get; set; }
 
         /// <summary>
         /// 评阅人
         /// </summary>
-        public string teacher;
+        public string teacher { get; set; }
 
         /// <summary>
         /// 评阅时间
         /// </summary>
-        public string time;
+        public string time { get; set; }
+
+        public Consititution() { }
     }
 }

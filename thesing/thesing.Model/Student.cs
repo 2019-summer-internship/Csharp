@@ -12,48 +12,50 @@ namespace thesing.Model
         /// <summary>
         /// 学生id
         /// </summary>
-        public string studentID;
+        public string studentID { get; set; }
 
         /// <summary>
         /// 成绩列表
         /// </summary>
-        public List<Achievement> achievement;
+        public List<Achievement> achievement { get; set; }
 
         /// <summary>
         /// 班级
         /// </summary>
-        public string clas;
+        public string clas { get; set; }
 
         /// <summary>
         /// 专业
         /// </summary>
-        public string major;
+        public string major { get; set; }
 
         /// <summary>
         /// 学院
         /// </summary>
-        public string school;
+        public string school { get; set; }
 
         /// <summary>
         /// <summary>
         /// 我的题目
         /// </summary>
-        public Project project;
+        public Project project { get; set; }
 
         /// <summary>
         /// 我的老师
         /// </summary>
-        public string teacher;
+        public string teacher { get; set; }
 
         /// <summary>
         /// 我的进度
         /// </summary>
-        public List<Task> process;
+        public List<Task> process { get; set; }
 
         /// <summary>
         /// 通知的集合
         /// </summary>
-        public List<Mail> mail;
+        public List<Mail> mail { get; set; }
+
+        public Student() { }
 
     }
 }
