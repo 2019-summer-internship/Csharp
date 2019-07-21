@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:thesing"
         mc:Ignorable="d"
-        Title="Home" Height="720" Width="1080">
+        Title="Home" Height="720" Width="1080" ResizeMode="CanMinimize">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>

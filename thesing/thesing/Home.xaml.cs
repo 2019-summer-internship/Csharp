@@ -112,10 +112,16 @@ namespace thesing
             }
             menuItem.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#EBEBEB"));
             menuItem.Foreground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#333333"));
-            MessageBox.Show(menuItem.Name.ToString());
+            
+
+
         }
 
-
+        /// <summary>
+        /// 渲染完成后获取所有可见菜单
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void getAllMenu(object sender, RoutedEventArgs e)
         {
             allMenu = GetChildObjects<MenuItem>(mainMenu, typeof(MenuItem));
