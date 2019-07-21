@@ -251,5 +251,11 @@
     <Resource Include="source\image\cirle.ico" />
     <Resource Include="source\image\people.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="source\image\cancel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="source\image\login-back.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
