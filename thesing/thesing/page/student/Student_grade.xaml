@@ -8,23 +8,21 @@
       d:DesignHeight="720" d:DesignWidth="830"
       Title="Student_grade">
 
-    <Grid>
+    <Grid Background="Black">
         <Grid.RowDefinitions>
-            <RowDefinition Height="71*"/>
-            <RowDefinition Height="161*"/>
-            <RowDefinition Height="126*"/>
-            <RowDefinition Height="362*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="172*"/>
+            <RowDefinition Height="56*"/>
+            <RowDefinition Height="172*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="202*"/>
         </Grid.RowDefinitions>
-        <Label Content="我的题目" HorizontalAlignment="Left" Margin="10,10,0,24.2" VerticalAlignment="Center" FontSize="24" Height="37" Width="106"/>
-        <Label Content="其它题目" HorizontalAlignment="Left" Margin="10,45,0,37.4" Grid.Row="2" VerticalAlignment="Center" FontSize="24" Height="44" Width="106" RenderTransformOrigin="0.574,3.74"/>
-        <Border CornerRadius="22" Margin="121,49,445.4,33.4" BorderThickness="1" BorderBrush="#FF737070" Grid.Row="2" HorizontalAlignment="Center" Width="264">
-            <TextBlock TextWrapping="Wrap"  FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </Border>
-        <ComboBox HorizontalAlignment="Left" Margin="453,49,0,0" Grid.Row="2" VerticalAlignment="Top" Width="130" Height="44" FontSize="24" FlowDirection="RightToLeft" Name="CbType" DisplayMemberPath="Name" SelectedValuePath="No" SelectedValue="{Binding Type}" ItemsSource="{Binding types}" IsEditable="False" Text="{Binding types}" RenderTransformOrigin="1.003,0.636" />
-
-
-        <Button Content="搜索" Background="#FF00FFBA" HorizontalAlignment="Left" Margin="706,49,0,0" Grid.Row="2" VerticalAlignment="Top" Width="86" Height="34" FontSize="24"/>
-        <ScrollBar Margin="0,0.6,0.4,-1" Grid.Row="3" VerticalAlignment="Top" Width="Auto" Height="362"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="169" Margin="4,2.333,-2,0" Grid.Row="1" VerticalAlignment="Top" Width="828"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="172" Margin="4,55.333,-7,0" Grid.Row="2" Grid.RowSpan="2" VerticalAlignment="Top" Width="833"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="199" Margin="4,2,0,0" Grid.Row="5" VerticalAlignment="Top" Width="821"/>
+        <TextBlock x:Name="textBlock" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="31" Margin="38,18,0,0" TextWrapping="Wrap" Text="前期成绩" VerticalAlignment="Top" Width="125" FontSize="24"/>
+        <TextBlock x:Name="textBlock1" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="36" Margin="23,9.333,0,0" Grid.Row="2" TextWrapping="Wrap" Text="中期成绩" VerticalAlignment="Top" Width="121" FontSize="24"/>
+        <TextBlock x:Name="textBlock2" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="44" Margin="16,16.333,0,0" Grid.Row="4" TextWrapping="Wrap" Text="最终成绩" VerticalAlignment="Top" Width="112" FontSize="24" Grid.RowSpan="2" RenderTransformOrigin="0.585,0.526"/>
 
 
     </Grid>

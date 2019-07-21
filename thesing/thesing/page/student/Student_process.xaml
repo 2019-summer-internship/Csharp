@@ -8,11 +8,13 @@
       d:DesignHeight="720" d:DesignWidth="830"
       Title="Student_process">
 
-    <Grid>
+    <Grid Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="61*"/>
-            <RowDefinition Height="388*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="13*"/>
         </Grid.RowDefinitions>
-        <ScrollViewer Height="622" Margin="0,0.4,0.4,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <ScrollViewer Height="622" Margin="0,5,0,-3" VerticalAlignment="Top" Grid.Row="1"/>
+        <ProgressBar HorizontalAlignment="Left" Height="46" Margin="57,30,0,0" VerticalAlignment="Top" Width="666"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="613" Margin="1,9,0,0" Grid.Row="1" VerticalAlignment="Top" Width="824"/>
     </Grid>
 </Page>

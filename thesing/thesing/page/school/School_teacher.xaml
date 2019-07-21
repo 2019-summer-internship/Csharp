@@ -8,32 +8,19 @@
       d:DesignHeight="720" d:DesignWidth="830"
       Title="School_teacher" Background="#FFF6F6F6">
 
-    <Grid Margin="0" Background="{DynamicResource {x:Static SystemColors.InfoBrushKey}}">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="70*"/>
-            <RowDefinition Height="120*"/>
-            <RowDefinition Height="120*"/>
-            <RowDefinition Height="120*"/>
-        </Grid.RowDefinitions>
-        <Border CornerRadius="20" Margin="33,43,438.4,24.6" BorderThickness="1" BorderBrush="#FF737070" HorizontalAlignment="Center" Height=" 50" Width="359">
-            <TextBlock TextWrapping="Wrap"  FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </Border>
-        <ComboBox HorizontalAlignment="Left" Margin="434,43,0,0" VerticalAlignment="Top" Width="130" Height="44" FontSize="24" FlowDirection="RightToLeft" RenderTransformOrigin="0.613,0.994">
-            <Button Content="导师姓名" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width="130"/>
-            <Button Content="涉及领域" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width="130"/>
-            <Button Content="学院" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width=" 130"/>
-            <Button Content="状态" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width=" 130"/>
-        </ComboBox>
-
-        <Button Content="搜索" HorizontalAlignment="Left" Margin="635,53,0,0" VerticalAlignment="Top" Width="86" Height="34" FontSize="24"/>
-        <Border CornerRadius="22" Margin="108,72.6,176.4,43.2" BorderThickness="1" BorderBrush="#FF737070" Grid.Row="2" HorizontalAlignment="Center" Width="546" Height="85">
-            <TextBlock TextWrapping="Wrap" Text="会加大开口带客户has"/>
-        </Border>
-        <Border CornerRadius="22" Margin="108,61.4,176.4,54.4" BorderThickness="1" BorderBrush="#FF737070" Grid.Row="1" HorizontalAlignment="Center" Width="546" Height="85">
-            <TextBlock TextWrapping="Wrap" Text="会加大开口带客户has"/>
-        </Border>
-        <Border CornerRadius="22" Margin="108,38.8,176.4,77" BorderThickness="1" BorderBrush="#FF737070" Grid.Row="3" HorizontalAlignment="Center" Width="546" Height="85">
-            <TextBlock TextWrapping="Wrap" Text="会加大开口带客户has"/>
-        </Border>
+    <Grid>
+        <Grid Background="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="19*"/>
+                <RowDefinition Height="161*"/>
+            </Grid.RowDefinitions>
+            <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="661" Margin="1,1,-5,-18" Grid.Row="1" VerticalAlignment="Top" Width="834"/>
+            <Border BorderBrush="Gray" Margin="10,32,390.4,16" BorderThickness="1" CornerRadius="14" Width=" 430" Height="28" Padding="0" Background="White">
+                <TextBox x:Name="account" BorderThickness="0" Background="Transparent" FontSize="18" Padding="8,0,0,0" VerticalAlignment="Center" Margin="0,-1,-0.6,4"/>
+            </Border>
+            <ComboBox x:Name="comboBox" Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="38" Margin="511,22,0,0" VerticalAlignment="Top" Width="136"/>
+            <Button x:Name="button" Content="搜索"  Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="40" Margin="696,26,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.623,-0.2" Background="#FF000106" FontSize="24"/>
+            <Border BorderBrush="#FF66CCFF" BorderThickness="3" HorizontalAlignment="Left" Margin="693,16,0,0" Width="62" Height="56" VerticalAlignment="Top" CornerRadius="10"/>
+        </Grid>
     </Grid>
 </Page>

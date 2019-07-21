@@ -8,55 +8,21 @@
       d:DesignHeight="720" d:DesignWidth="830"
       Title="School_project" Background="White">
 
-    <Grid Margin="0" Background="Black">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="13*"/>
-            <RowDefinition Height="67*"/>
-        </Grid.RowDefinitions>
-        <Border CornerRadius="20" Margin="75,37,396.4,32.8" BorderThickness="1" BorderBrush="#FF737070" HorizontalAlignment="Center" Width="359" Background="White">
-            <TextBox TextWrapping="Wrap"  Background="{x:Null}"  Margin="0,0,0.2,-0.4" HorizontalAlignment="Right" Width="357"  />
-        </Border>
-        <ComboBox HorizontalAlignment="Left" Margin="517,37,0,0" VerticalAlignment="Top" Width="130" Height="44" FontSize="24" FlowDirection="RightToLeft" RenderTransformOrigin="0.613,0.994">
-            <Button Content="导师姓名" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width="130"/>
-            <Button Content="涉及领域" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width="130"/>
-            <Button Content="学院" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width=" 130"/>
-            <Button Content="状态" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width=" 130"/>
-        </ComboBox>
-        <Button Content="搜索" HorizontalAlignment="Left" Margin="714,37,0,0" VerticalAlignment="Top" Width="86" Height="34" FontSize="24"/>
-        <ListBox ItemsSource="{Binding PList}">
-            <ListBox.ItemTemplate>
-                <DataTemplate DataType="local:Person">
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="auto"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Image x:Name="img">
-                            <Image.Style>
-                                <Style TargetType="Image">
-                                    <Setter Property="Width" Value="16"/>
-                                    <Setter Property="Height" Value="16"/>
-                                    <Style.Triggers>
-                                        <DataTrigger Binding="{Binding IsSelected,RelativeSource={RelativeSource AncestorType={x:Type ListBoxItem}}}" Value="true">
-                                            <Setter Property="Width" Value="24"/>
-                                            <Setter Property="Height" Value="24"/>
-                                        </DataTrigger>
-                                    </Style.Triggers>
-                                </Style>
-                            </Image.Style>
-                        </Image>
-                        <TextBlock Grid.Column="1" Text="{Binding Name}"/>
-                    </Grid>
-                    <DataTemplate.Triggers>
-                        <DataTrigger Binding="{Binding IsFemale}" Value="true">
-                            <Setter Property="Source" Value="./source/image/thesing-logo-h-white.png" TargetName="img"/>
-                        </DataTrigger>
-                        <DataTrigger Binding="{Binding IsFemale}" Value="false">
-                            <Setter Property="Source" Value="./source/image/thesing-logo-h-white.png" TargetName="img"/>
-                        </DataTrigger>
-                    </DataTemplate.Triggers>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+    <Grid >
+        <Grid Background="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="19*"/>
+                <RowDefinition Height="161*"/>
+            </Grid.RowDefinitions>
+            <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="661" Margin="1,1,-5,-18" Grid.Row="1" VerticalAlignment="Top" Width="834"/>
+            <Border BorderBrush="Gray" Margin="10,32,390.4,16" BorderThickness="1" CornerRadius="14" Width=" 430" Height="28" Padding="0" Background="White">
+                <TextBox x:Name="account" BorderThickness="0" Background="Transparent" FontSize="18" Padding="8,0,0,0" VerticalAlignment="Center" Margin="0,-1,-0.6,4"/>
+            </Border>
+            <ComboBox x:Name="comboBox" Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="38" Margin="511,22,0,0" VerticalAlignment="Top" Width="136"/>
+            <Button x:Name="button" Content="搜索"  Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="40" Margin="696,26,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.623,-0.2" Background="#FF000106" FontSize="24"/>
+            <Border BorderBrush="#FF66CCFF" BorderThickness="3" HorizontalAlignment="Left" Margin="693,16,0,0" Width="62" Height="56" VerticalAlignment="Top" CornerRadius="10"/>
+
+        </Grid>
+
     </Grid>
 </Page>

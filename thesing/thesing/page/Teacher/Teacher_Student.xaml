@@ -8,19 +8,13 @@
       d:DesignHeight="720" d:DesignWidth="830"
       Title="Teacher_MyStudents">
 
-    <Grid>
+    <Grid Margin="0,0,2,19" Background="Black">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="610" Margin="-1,6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="830">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="60" Margin="17,20,0,0" TextWrapping="Wrap" Text="我的学生" VerticalAlignment="Top" Width="238" FontSize="36"/>
+        <TextBlock x:Name="textBlock" Foreground="#FF66CCFF"  HorizontalAlignment="Left" Height="60" Margin="17,20,0,0" TextWrapping="Wrap" Text="我的学生" VerticalAlignment="Top" Width="238" FontSize="36"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="606" Margin="2,13,-4,0" Grid.Row="1" VerticalAlignment="Top" Width="830"/>
 
     </Grid>
 </Page>
