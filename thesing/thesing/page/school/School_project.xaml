@@ -9,18 +9,39 @@
       Title="School_project" Background="White">
 
     <Grid >
-        <Grid Background="Black">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="19*"/>
-                <RowDefinition Height="161*"/>
+        <Grid Background="#FFD7D7D7">
+            <Grid.RowDefinitions >
+                <RowDefinition Height="83*"/>
+                <RowDefinition Height="58*"/>
+                <RowDefinition Height="122*"/>
+                <RowDefinition Height="58*"/>
+                <RowDefinition Height="416*"/>
             </Grid.RowDefinitions>
-            <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="661" Margin="1,1,-5,-18" Grid.Row="1" VerticalAlignment="Top" Width="834"/>
-            <Border BorderBrush="Gray" Margin="10,32,390.4,16" BorderThickness="1" CornerRadius="14" Width=" 430" Height="28" Padding="0" Background="White">
-                <TextBox x:Name="account" BorderThickness="0" Background="Transparent" FontSize="18" Padding="8,0,0,0" VerticalAlignment="Center" Margin="0,-1,-0.6,4"/>
+            <Border BorderBrush="Gray" Margin="123,26,347.4,20.8" BorderThickness="1" CornerRadius="14" Padding="0" Background="White">
+                <TextBox x:Name="account_Copy" BorderThickness="0" Background="Transparent" FontSize="18" Padding="8,0,0,0" VerticalAlignment="Center" Margin="123,232,-123.6,-221.8"/>
             </Border>
             <ComboBox x:Name="comboBox" Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="38" Margin="511,22,0,0" VerticalAlignment="Top" Width="136"/>
             <Button x:Name="button" Content="搜索"  Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="40" Margin="696,26,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.623,-0.2" Background="#FF000106" FontSize="24"/>
-            <Border BorderBrush="#FF66CCFF" BorderThickness="3" HorizontalAlignment="Left" Margin="693,16,0,0" Width="62" Height="56" VerticalAlignment="Top" CornerRadius="10"/>
+            <Rectangle Fill="#FFD7D7D7" HorizontalAlignment="Stretch"  Margin="0,0.8,0.4,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Stretch" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="1" />
+            <TextBlock HorizontalAlignment="Left"   Margin="0" TextWrapping="Wrap" Text="搜索题目" VerticalAlignment="Center" FontSize="24" Width="108" Height="40" Grid.Row="1" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left"   Margin="0" TextWrapping="Wrap" Text="其他题目" VerticalAlignment="Center" FontSize="24" Width="108" Height="40" Grid.Row="3" FontWeight="Bold"/>
+            <Border BorderBrush="Gray" Margin="123,8.2,347.4,15.6" BorderThickness="1" CornerRadius="14" Padding="0" Background="White" Grid.Row="3">
+                <TextBox x:Name="account_Copy1" BorderThickness="0" Background="Transparent" FontSize="18" Padding="8,0,0,0" VerticalAlignment="Center" Margin="123,232,-123.6,-221.8"/>
+            </Border>
+            <ComboBox x:Name="comboBox_Copy" Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="38" Margin="511,22,0,0" VerticalAlignment="Top" Width="136"/>
+            <Button x:Name="button_Copy" Content="搜索"  Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="40" Margin="696,8.2,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.623,-0.2" Background="#FF000106" FontSize="24" Grid.Row="3"/>
+            <ComboBox x:Name="comboBox_Copy1" Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="38" Margin="511,8.2,0,0" VerticalAlignment="Top" Width="136" Grid.Row="3"/>
+            <Rectangle Fill="#FFF7F7F7" HorizontalAlignment="Stretch"  Margin="0" Grid.Row="2" Stroke="Black" VerticalAlignment="Stretch" />
+            <Rectangle Fill="#FFD7D7D7" HorizontalAlignment="Left" Height="120" Margin="123,2,0,0" VerticalAlignment="Top" Width="500" RadiusX="40" RadiusY="40" Grid.Row="2"/>
+
+            <Button Content="操作" HorizontalAlignment="Left" Margin="454,24.4,0,0" VerticalAlignment="Top" Width="99" Background="#FF66CCFF" Grid.Row="2" Height="33"/>
+            <TextBlock HorizontalAlignment="Left"   Margin="150,24,0,0" TextWrapping="Wrap" Text="智能机器人答辩" VerticalAlignment="Top" FontSize="20" Width="230" Height="23" Grid.Row="2"/>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="15" Width="55"/>
+            <TextBlock Margin="485,80.4,0,0" TextWrapping="Wrap" Text="已读" RenderTransformOrigin="0.45,1.906" FontFamily="Cambria" FontSize="20" Foreground="Red" OpacityMask="Red" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="2" Height="28" Width="48" />
+            <TextBlock HorizontalAlignment="Left" Margin="150,52,0,0" TextWrapping="Wrap" Text="智能机器人答辩" VerticalAlignment="Top" FontSize="20" Width="230" Height="23" Grid.Row="2"/>
+            <TextBlock HorizontalAlignment="Left" Margin="150,80,0,0" TextWrapping="Wrap" Text="智能机器人答辩" VerticalAlignment="Top" FontSize="20" Width="230" Height="23" Grid.Row="2"/>
+            <Rectangle Fill="#FFF7F7F7" HorizontalAlignment="Stretch"  Margin="0" Grid.Row="4" Stroke="Black" VerticalAlignment="Stretch" />
+
 
         </Grid>
 
