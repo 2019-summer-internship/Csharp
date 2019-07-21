@@ -10,19 +10,13 @@
 
     <Grid>
         <Grid>
-            <Grid Background="#FFF0F8FA">
+            <Grid Background="Black">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="17*"/>
                     <RowDefinition Height="223*"/>
                 </Grid.RowDefinitions>
-                <ListView x:Name="listView" HorizontalAlignment="Left" Height="636" Margin="1,4.333,0,0" VerticalAlignment="Top" Width="829" Grid.Row="1">
-                    <ListView.View>
-                        <GridView>
-                            <GridViewColumn/>
-                        </GridView>
-                    </ListView.View>
-                </ListView>
-                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="33" Margin="10,11,0,0" TextWrapping="Wrap" Text="我校学院" VerticalAlignment="Top" Width="147" FontSize="24"/>
+                <TextBlock x:Name="textBlock" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="33" Margin="46,13,0,0" TextWrapping="Wrap" Text="我校学院" VerticalAlignment="Top" Width="147" FontSize="24"/>
+                <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="670" Margin="0,49,0,0" VerticalAlignment="Top" Width="828" Grid.RowSpan="2"/>
 
             </Grid>
         </Grid>

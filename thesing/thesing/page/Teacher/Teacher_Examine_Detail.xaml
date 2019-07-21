@@ -9,19 +9,20 @@
       Title="Teacher_JudgeMyStudents">
 
     <Grid>
-        <Grid Background="#FFF0F8FA">
+        <Grid Background="Black">
             <Grid.RowDefinitions>
-                <RowDefinition Height="53*"/>
-                <RowDefinition Height="397*"/>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="131*"/>
             </Grid.RowDefinitions>
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="21,22,0,12.667" TextWrapping="Wrap" Text="评阅-我的学生" Width="197" FontSize="24"/>
-            <ListView x:Name="listView" HorizontalAlignment="Left" Height="627" Margin="6,6.333,0,0" Grid.Row="1" VerticalAlignment="Top" Width="820">
-                <ListView.View>
-                    <GridView>
-                        <GridViewColumn/>
-                    </GridView>
-                </ListView.View>
-            </ListView>
+            <TextBlock x:Name="textBlock" Foreground="#FF66CCFF" HorizontalAlignment="Left" Margin="21,22,0,12.333" TextWrapping="Wrap" Text="评阅-我的学生" Width="197" FontSize="24"/>
+            <Rectangle Fill="#FF00000C" HorizontalAlignment="Left" Height="649" Margin="-1,4.667,-3,0" Stroke="Black" VerticalAlignment="Top" Width="834" Grid.Row="1"/>
+            <TextBlock x:Name="textBlock1" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="42" Margin="53,85.667,0,0" Grid.Row="1" TextWrapping="Wrap" Text="题目名称" VerticalAlignment="Top" Width="112" FontSize="24"/>
+            <Button x:Name="button" Content="提交" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="46" Margin="687,583.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="114"/>
+            <TextBlock x:Name="textBlock2" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="36" Margin="219,83.667,0,0" Grid.Row="1" TextWrapping="Wrap" Text="基于数据仓库的高校教务支持系统的建设" VerticalAlignment="Top" Width="454" FontSize="24"/>
+            <TextBlock x:Name="textBlock3" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="36" Margin="55,133.667,0,0" Grid.Row="1" TextWrapping="Wrap" Text="评分阶段" VerticalAlignment="Top" Width="110" FontSize="24" RenderTransformOrigin="0.564,0"/>
+            <TextBlock x:Name="textBlock4" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="34" Margin="227,137.667,0,0" Grid.Row="1" TextWrapping="Wrap" Text="初期" VerticalAlignment="Top" Width="110" FontSize="24"/>
+            <TextBlock x:Name="textBlock5" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="32" Margin="57,179.667,0,0" Grid.Row="1" TextWrapping="Wrap" Text="打分" VerticalAlignment="Top" Width="92" FontSize="24"/>
+            <TextBox x:Name="textBox" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="30" Margin="227,183.667,0,0" Grid.Row="1" TextWrapping="Wrap" Text="分数" VerticalAlignment="Top" Width="152" FontSize="24"/>
 
         </Grid>
 
