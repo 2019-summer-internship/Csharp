@@ -37,7 +37,7 @@ namespace thesing.Service
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public List<Model.Student> GetStudentById(string[] idList)
+        public List<Model.Student> GetStudentById(List<string> idList)
         {
             Service.Achievement achievement = new Achievement();
             Service.Class clas = new Class();
