@@ -7,7 +7,7 @@ namespace thesing.Model
     /// <summary>
     /// 评阅模型
     /// </summary>
-    class Examine
+    public class Examine
     {
         /// <summary>
         /// 编号

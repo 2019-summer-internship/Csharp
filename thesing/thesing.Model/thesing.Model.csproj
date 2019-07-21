@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Achievement.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Consititution.cs" />
     <Compile Include="Examine.cs" />
     <Compile Include="Mail.cs" />
