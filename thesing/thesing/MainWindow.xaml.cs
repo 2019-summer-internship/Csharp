@@ -22,6 +22,7 @@ namespace thesing
     {
         public MainWindow()
         {
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
             InitializeComponent();
         }
         /// <summary>
@@ -29,12 +30,12 @@ namespace thesing
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void sign(object sender, RoutedEventArgs e)
+        private void Sign(object sender, RoutedEventArgs e)
         {
             Controller.User user = new Controller.User();
 
             string account = this.account.Text;
-            string pwd = this.password.Text;
+            string pwd = this.password.Password;
 
             if (account.Length <= 0)
             {
@@ -62,6 +63,16 @@ namespace thesing
                 case -4: MessageBox.Show("密码过长"); break;
                 default: break;
             }
+        }
+
+        /// <summary>
+        /// 取消按钮响应函数
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Cancel(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

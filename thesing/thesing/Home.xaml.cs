@@ -26,6 +26,7 @@ namespace thesing
 
         public Home(Model.User user)
         {
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
             InitializeComponent();
 
             string userType = user.type;

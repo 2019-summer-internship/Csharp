@@ -3,15 +3,45 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        AllowsTransparency="True"
+        WindowStyle="None"
         xmlns:local="clr-namespace:thesing"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1080">
+        Title="MainWindow" Height="400" Width="500" Background="{x:Null}">
+    
     <Grid RenderTransformOrigin="0.482,0.473">
-        <TextBox x:Name="account" HorizontalAlignment="Left" Height="23" Margin="544,239,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="password" HorizontalAlignment="Left" Height="23" Margin="544,278,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="503,240,0,0" TextWrapping="Wrap" Text="账号" VerticalAlignment="Top" RenderTransformOrigin="2,0.906"/>
-        <TextBlock HorizontalAlignment="Left" Margin="503,286,0,0" TextWrapping="Wrap" Text="密码" VerticalAlignment="Top" RenderTransformOrigin="2,0.906"/>
-        <Button x:Name="signButton" Click="sign" Content="登录" HorizontalAlignment="Left" Margin="589,327,0,0" VerticalAlignment="Top" Width="75"/>
+        <Border BorderThickness="0" BorderBrush="Gray" CornerRadius="10,10,10,10" Background="#FF66CCFF"/>
+        <Image Source="/source/image/thesing-logo-h-white.png" Margin="40,30,40,250"/>
+
+        <Border BorderBrush="Gray" Margin="160,100,100,68" BorderThickness="1" CornerRadius="14" Height="28" Padding="0" Background="White">
+            <TextBox x:Name="account" BorderThickness="0" Background="Transparent" FontSize="18" Padding="8,0,0,0" VerticalAlignment="Center"/>
+        </Border>
+        <Border BorderBrush="Gray" Margin="160,200,100,50" BorderThickness="1" CornerRadius="14" Height="28" Padding="0" Background="White">
+            <PasswordBox x:Name="password" BorderThickness="0" Background="Transparent" FontSize="18" Padding="8,0,0,0" VerticalAlignment="Center"/>
+        </Border>
+        
+        <TextBlock HorizontalAlignment="right" Margin="0,202,350,0" TextWrapping="Wrap" Text="账号" FontSize="22" VerticalAlignment="Top" RenderTransformOrigin="2,0.906" FontWeight="Bold" Foreground="#333333"/>
+        <TextBlock HorizontalAlignment="right" Margin="0,261,350,0" TextWrapping="Wrap" Text="密码" FontSize="22" VerticalAlignment="Top" RenderTransformOrigin="2,0.906" FontWeight="Bold" Foreground="#333333"/>
+
+        <Button x:Name="login" Margin="300,330,100,30" Content="登录" Height="36" Width="100" Background="{x:Null}" Foreground="White" FontSize="20" FontWeight="Bold" Click="Sign">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="#99cc99" BorderThickness="0" CornerRadius="18" Background="#00cc00">
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="cancel" Margin="100,330,300,30" Content="取消" Height="36" Width="100" Background="{x:Null}" Foreground="White" FontSize="20" FontWeight="Bold" Click="Cancel">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="#cc6666" BorderThickness="0" CornerRadius="18" Background="#cc3333">
+                        <ContentPresenter Content="{TemplateBinding ContentControl.Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
     </Grid>
 </Window>
