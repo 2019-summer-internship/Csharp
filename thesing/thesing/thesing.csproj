@@ -264,5 +264,8 @@
   <ItemGroup>
     <Resource Include="source\image\login-back.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="source\image\min-icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
