@@ -28,8 +28,8 @@ namespace thesing
         /// <summary>
         /// 登录按钮响应函数
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param projectname="sender"></param>
+        /// <param projectname="e"></param>
         private void Sign(object sender, RoutedEventArgs e)
         {
             Controller.User user = new Controller.User();
@@ -68,8 +68,8 @@ namespace thesing
         /// <summary>
         /// 取消按钮响应函数
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param projectname="sender"></param>
+        /// <param projectname="e"></param>
         private void Cancel(object sender, RoutedEventArgs e)
         {
             this.Close();

@@ -8,42 +8,50 @@
       d:DesignHeight="720" d:DesignWidth="830"
       Title="School_project" Background="White">
 
-    <Grid >
-        <Grid Background="#FFD7D7D7">
-            <Grid.RowDefinitions >
-                <RowDefinition Height="83*"/>
-                <RowDefinition Height="58*"/>
-                <RowDefinition Height="122*"/>
-                <RowDefinition Height="58*"/>
-                <RowDefinition Height="416*"/>
-            </Grid.RowDefinitions>
-            <Border BorderBrush="Gray" Margin="123,26,347.4,20.8" BorderThickness="1" CornerRadius="14" Padding="0" Background="White">
-                <TextBox x:Name="account_Copy" BorderThickness="0" Background="Transparent" FontSize="18" Padding="8,0,0,0" VerticalAlignment="Center" Margin="123,232,-123.6,-221.8"/>
-            </Border>
-            <ComboBox x:Name="comboBox" Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="38" Margin="511,22,0,0" VerticalAlignment="Top" Width="136"/>
-            <Button x:Name="button" Content="搜索"  Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="40" Margin="696,26,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.623,-0.2" Background="#FF000106" FontSize="24"/>
-            <Rectangle Fill="#FFD7D7D7" HorizontalAlignment="Stretch"  Margin="0,0.8,0.4,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Stretch" Grid.Column="0" Grid.RowSpan="4" Grid.ColumnSpan="1" />
-            <TextBlock HorizontalAlignment="Left"   Margin="0" TextWrapping="Wrap" Text="搜索题目" VerticalAlignment="Center" FontSize="24" Width="108" Height="40" Grid.Row="1" FontWeight="Bold"/>
-            <TextBlock HorizontalAlignment="Left"   Margin="0" TextWrapping="Wrap" Text="其他题目" VerticalAlignment="Center" FontSize="24" Width="108" Height="40" Grid.Row="3" FontWeight="Bold"/>
-            <Border BorderBrush="Gray" Margin="123,8.2,347.4,15.6" BorderThickness="1" CornerRadius="14" Padding="0" Background="White" Grid.Row="3">
-                <TextBox x:Name="account_Copy1" BorderThickness="0" Background="Transparent" FontSize="18" Padding="8,0,0,0" VerticalAlignment="Center" Margin="123,232,-123.6,-221.8"/>
-            </Border>
-            <ComboBox x:Name="comboBox_Copy" Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="38" Margin="511,22,0,0" VerticalAlignment="Top" Width="136"/>
-            <Button x:Name="button_Copy" Content="搜索"  Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="40" Margin="696,8.2,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.623,-0.2" Background="#FF000106" FontSize="24" Grid.Row="3"/>
-            <ComboBox x:Name="comboBox_Copy1" Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="38" Margin="511,8.2,0,0" VerticalAlignment="Top" Width="136" Grid.Row="3"/>
-            <Rectangle Fill="#FFF7F7F7" HorizontalAlignment="Stretch"  Margin="0" Grid.Row="2" Stroke="Black" VerticalAlignment="Stretch" />
-            <Rectangle Fill="#FFD7D7D7" HorizontalAlignment="Left" Height="120" Margin="123,2,0,0" VerticalAlignment="Top" Width="500" RadiusX="40" RadiusY="40" Grid.Row="2"/>
+    <Grid Background="DarkGray">
+        <Border BorderBrush="Gray" Background="White" BorderThickness="0" HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" VerticalAlignment="Top" Width="520" CornerRadius="18">
+            <TextBox x:Name="school_search_key" BorderThickness="0" Background="{x:Null}" Padding="10,0,10,0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="内容" VerticalAlignment="Center" Width="520" FontSize="24"/>
+        </Border>
+        <Border BorderBrush="Gray" Background="White" BorderThickness="0" HorizontalAlignment="Left" Height="36" Margin="545,10,0,0" VerticalAlignment="Top" Width="150" CornerRadius="18">
+            <TextBox x:Name="school_search_type" BorderThickness="0" Background="{x:Null}" Padding="10,0,10,0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="关键字" VerticalAlignment="Center" Width="150" FontSize="20"/>
+        </Border>
+        <Button x:Name="login" HorizontalAlignment="right" VerticalContentAlignment="Top" Margin="0,10,20,674" Content="搜索" Height="36" Width="100" Background="{x:Null}" Foreground="White" FontSize="20" FontWeight="Bold">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="#ccccff" BorderThickness="0" CornerRadius="18" Background="#33CCFF">
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
-            <Button Content="操作" HorizontalAlignment="Left" Margin="454,24.4,0,0" VerticalAlignment="Top" Width="99" Background="#FF66CCFF" Grid.Row="2" Height="33"/>
-            <TextBlock HorizontalAlignment="Left"   Margin="150,24,0,0" TextWrapping="Wrap" Text="智能机器人答辩" VerticalAlignment="Top" FontSize="20" Width="230" Height="23" Grid.Row="2"/>
-            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="15" Width="55"/>
-            <TextBlock Margin="485,80.4,0,0" TextWrapping="Wrap" Text="已读" RenderTransformOrigin="0.45,1.906" FontFamily="Cambria" FontSize="20" Foreground="Red" OpacityMask="Red" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="2" Height="28" Width="48" />
-            <TextBlock HorizontalAlignment="Left" Margin="150,52,0,0" TextWrapping="Wrap" Text="智能机器人答辩" VerticalAlignment="Top" FontSize="20" Width="230" Height="23" Grid.Row="2"/>
-            <TextBlock HorizontalAlignment="Left" Margin="150,80,0,0" TextWrapping="Wrap" Text="智能机器人答辩" VerticalAlignment="Top" FontSize="20" Width="230" Height="23" Grid.Row="2"/>
-            <Rectangle Fill="#FFF7F7F7" HorizontalAlignment="Stretch"  Margin="0" Grid.Row="4" Stroke="Black" VerticalAlignment="Stretch" />
+        <!-- 下面是列表 -->
+        <!-- 直接把ItemSource绑定到.cs中的变量allSchoolInfo，这里写了就不用去代码里写绑定了，你说开发这个的程序员是多懒啊！！ -->
+        <ListBox ItemsSource="{Binding Path=allSchoolInfo}" HorizontalAlignment="Left" BorderThickness="0" Height="660" Margin="0,60,0,0" VerticalAlignment="Top" Width="830">
+            <!-- 下面写的是每一个Item的布局模板，给每个item都套一个相同的绿帽子 -->
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="local:schoolInfo">
+                    <!-- 这里将数据类型指向.cs文件中的achoolInfo类，写个local就说明是应用当前对应的.cs文件中的变量啦！！！ -->
+                    <Grid Margin="20,10,10,20" Width="790" Height="120">
+                        <Image x:Name="schoolAvatar" Source="{Binding Path=avatar}" Margin="10,10,680,10" Height="100" Width="100">
+                            <!-- 这里将图片的资源绑定到schoolInfo中的avatar数据成员 -->
+                            <Image.Clip>
+                                <RectangleGeometry RadiusX="50" RadiusY="50" Rect="0,0,100,100"/>
+                            </Image.Clip>
+                        </Image>
+                        <TextBlock x:Name="projectName" Text="{Binding Path=projectname}" Margin="160,20,100,50" Height="50"   FontSize="20" FontWeight="Bold"/>
 
+                        <TextBlock x:Name="teacherName" Text="{Binding Path=teachername}" Margin="300,20,100,50" Height="50"  FontSize="20" FontWeight="Bold"/>
+                        <TextBlock x:Name="areaname" Text="{Binding Path=area}" Margin="160,60,50,20" Height="50"  FontSize="10" FontWeight="Bold"/>
+                        <TextBlock x:Name="statument" Text="{Binding Path=statu}" Margin="600,60,100,20" Height="50"  FontSize="25" FontWeight="Bold"/>
+                        <!-- 这里将text的内容绑定到SchoolInfo中的name数据成员 -->
 
-        </Grid>
-
+                        <!-- 这里将进度条的值绑定到SchoolInfo中的process数据成员 -->
+                    </Grid>
+                    <!-- 数据绑定就写完了，这还不简单 -->
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <!-- 结束模板 -->
+        </ListBox>
     </Grid>
-</Page>
+    </Page> 

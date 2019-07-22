@@ -1,12 +1,12 @@
-﻿<Page x:Class="thesing.page.school.School_teacher"
+﻿<Page x:Class="thesing.page.School.School_reconsidering"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:thesing.page.school"
+      xmlns:local="clr-namespace:thesing.page.School"
       mc:Ignorable="d" 
       d:DesignHeight="720" d:DesignWidth="830"
-      Title="School_teacher" Background="#FFF6F6F6">
+      Title="School_reconsidering">
 
     <Grid Background="DarkGray">
         <Border BorderBrush="Gray" Background="White" BorderThickness="0" HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" VerticalAlignment="Top" Width="520" CornerRadius="18">
@@ -39,11 +39,9 @@
                                 <RectangleGeometry RadiusX="50" RadiusY="50" Rect="0,0,100,100"/>
                             </Image.Clip>
                         </Image>
-                        <TextBlock x:Name="teacherName" Text="{Binding Path=name}" Margin="160,20,100,50" Height="50"   FontSize="20" FontWeight="Bold"/>
-
-                        <TextBlock x:Name="titleName" Text="{Binding Path=title}" Margin="300,20,100,50" Height="50"  FontSize="20" FontWeight="Bold"/>
-                        <TextBlock x:Name="areaname" Text="{Binding Path=area}" Margin="160,60,50,20" Height="50"  FontSize="10" FontWeight="Bold"/>
-                        <TextBlock x:Name="accountname" Text="{Binding Path=account}" Margin="600,60,100,20" Height="50"  FontSize="25" FontWeight="Bold"/>
+                        <TextBlock x:Name="senderName" Text="{Binding Path=name}" Margin="160,20,100,50" Height="50"   FontSize="20" FontWeight="Bold"/>
+                        <TextBlock x:Name="fromName" Text="{Binding Path=from}" Margin="300,20,100,50" Height="50"  FontSize="20" FontWeight="Bold"/>
+                        <TextBlock x:Name="dataname" Text="{Binding Path=data}" Margin="160,60,50,20" Height="50"  FontSize="10" FontWeight="Bold"/>
                         <!-- 这里将text的内容绑定到SchoolInfo中的name数据成员 -->
 
                         <!-- 这里将进度条的值绑定到SchoolInfo中的process数据成员 -->

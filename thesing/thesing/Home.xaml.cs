@@ -44,7 +44,7 @@ namespace thesing
         /// <summary>
         /// 渲染学生界面
         /// </summary>
-        /// <param name="user"></param>
+        /// <param projectname="user"></param>
         public void RenderStudentUI(Model.User user)
         {
             nickname.Text = user.name;
@@ -60,7 +60,7 @@ namespace thesing
         /// <summary>
         /// 渲染导师界面
         /// </summary>
-        /// <param name="user"></param>
+        /// <param projectname="user"></param>
         public void RenderTeacherUI(Model.User user)
         {
             nickname.Text = user.name;
@@ -75,7 +75,7 @@ namespace thesing
         /// <summary>
         /// 渲染学院界面
         /// </summary>
-        /// <param name="user"></param>
+        /// <param projectname="user"></param>
         public void RenderSchoolUI(Model.User user)
         {
             nickname.Text = user.name;
@@ -91,7 +91,7 @@ namespace thesing
         /// <summary>
         /// 渲染校方界面
         /// </summary>
-        /// <param name="user"></param>
+        /// <param projectname="user"></param>
         public void RenderUniversityUI(Model.User user)
         {
             nickname.Text = user.name;
@@ -105,8 +105,8 @@ namespace thesing
         /// <summary>
         /// 菜单点击函数
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param projectname="sender"></param>
+        /// <param projectname="e"></param>
         private void mainMenuClick(object sender, RoutedEventArgs e)
         {
             MenuItem menuItem = sender as MenuItem;
@@ -129,8 +129,8 @@ namespace thesing
         /// <summary>
         /// 渲染完成后获取所有可见菜单
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param projectname="sender"></param>
+        /// <param projectname="e"></param>
         private void getAllMenu(object sender, RoutedEventArgs e)
         {
             allMenu = GetChildObjects<MenuItem>(mainMenu, typeof(MenuItem));
@@ -139,8 +139,8 @@ namespace thesing
         /// <summary>
         /// 获取所有子元素
         /// </summary>
-        /// <typeparam name="MenuItem"></typeparam>
-        /// <param name="obj"></param>
+        /// <typeparam projectname="MenuItem"></typeparam>
+        /// <param projectname="obj"></param>
         /// <returns></returns>
         public List<T> GetChildObjects<T>(DependencyObject obj, Type typename) where T : FrameworkElement
         {

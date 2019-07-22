@@ -90,6 +90,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="page\School\School_reconsidering.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="page\School\School_Schedule.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -159,6 +163,9 @@
     </Compile>
     <Compile Include="page\School\School_Project.xaml.cs">
       <DependentUpon>School_Project.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="page\School\School_reconsidering.xaml.cs">
+      <DependentUpon>School_reconsidering.xaml</DependentUpon>
     </Compile>
     <Compile Include="page\School\School_Schedule.xaml.cs">
       <DependentUpon>School_Schedule.xaml</DependentUpon>

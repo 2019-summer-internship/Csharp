@@ -13,41 +13,41 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace thesing.page.school
+namespace thesing.page.School
 {
     /// <summary>
-    /// School_project.xaml 的交互逻辑
+    /// School_reconsidering.xaml 的交互逻辑
     /// </summary>
-    public partial class School_project : Page
+    public partial class School_reconsidering : Page
     {
         public List<schoolInfo> allSchoolInfo { get; set; } //这是ListBox绑定的item列表
-        public School_project()
+        public School_reconsidering()
         {
             InitializeComponent();
             allSchoolInfo = new List<schoolInfo>(); //new一个新对象了，终于有对象了
             allSchoolInfo.Add(new schoolInfo //给这个对象添加一个新schoolInfo，好比买了一个包包给对象
             {
                 avatar = "/source/image/people.ico",
-                projectname = "信息学院",
-                teachername = "胡晓鹏",
-                area = "大数据分析",
-                statu = "名额为5",
+                name = "第一阶段有误",
+                from = "胡晓鹏",
+                data = "2019-7-22",
+
             });
             allSchoolInfo.Add(new schoolInfo //这里又添加一个schoolInfo，又买一个包包
             {
                 avatar = "/source/image/people.ico",
-                projectname = "物理学院",
-                teachername = "胡晓鹏",
-                area = "大数据分析",
-                statu = "名额为5",
+                name = "第二阶段有误",
+                from = "胡晓鹏",
+                data = "2019-7-22",
+
             });
             allSchoolInfo.Add(new schoolInfo //这里又添加一个schoolInfo，这次恐怕得买。。。。。额不知道了！！
             {
                 avatar = "/source/image/people.ico",
-                projectname = "机械学院",
-                teachername = "胡晓鹏",
-                area = "大数据分析",
-                statu = "名额为5",
+                name = "第三阶段有误",
+                from = "胡晓鹏",
+                data = "2019-7-22",
+
             });
 
             this.DataContext = this; //总之，这样我也不懂什么this赋值给this之后，这个鬼扯的ListBox就搞定了，以后只要更新allSchoolInfo，界面就会跟着更新了
@@ -60,12 +60,10 @@ namespace thesing.page.school
         public class schoolInfo
         {
             public string avatar { get; set; }
-            public string projectname { get; set; }
-            public string teachername { get; set; }
-            public string area { get; set; }
-            public string statu { get; set; }
+            public string name { get; set; }
+            public string from { get; set; }
+            public string data { get; set; }
         }
     }
-
 
 }
