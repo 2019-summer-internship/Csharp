@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="School_shdule" Background="#FFF9F6F6">
 
-    <ListBox ItemsSource="{Binding PList}" Background="#FFB93A3A" Margin="99,99,162,68.6">
+    <ListBox ItemsSource="{Binding PList}" Background="#FF252543" Margin="99,99,162,68.6">
         <ListBox.ItemTemplate>
             <DataTemplate DataType="local:Person">
                 <Grid>

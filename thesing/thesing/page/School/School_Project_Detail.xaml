@@ -12,26 +12,27 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="71*"/>
             <RowDefinition Height="90*"/>
-            <RowDefinition Height="343*"/>
-            <RowDefinition Height="216*"/>
+            <RowDefinition Height="261*"/>
+            <RowDefinition Height="298*"/>
         </Grid.RowDefinitions>
         <Label Content="这是某题目的状态"  HorizontalAlignment="Left" Margin="151,21,0,0" VerticalAlignment="Top" Width="500" Height="40" FontSize="20" FontWeight="Bold"/>
-        <Label HorizontalAlignment="Left" Margin="0,9.667,0,0" VerticalAlignment="Top" Width="500" Height="40" FontSize="20" FontWeight="Bold" Grid.Row="1">
+        <Label HorizontalAlignment="Left" Margin="0,9.8,0,0" VerticalAlignment="Top" Width="500" Height="40" FontSize="20" FontWeight="Bold" Grid.Row="1">
             <Label Content="这是某题目的状态" HorizontalAlignment="Left" VerticalAlignment="Top" Width="500" Height="40" FontSize="20" FontWeight="Bold"/>
         </Label>
         <Image HorizontalAlignment="Left" Height="40" Margin="10,21,0,0" VerticalAlignment="Top" Width="65" Source="/source/image/thesing-logo-h-white.png" OpacityMask="#FFC82020"/>
-        <Label Content="指导老师：XXX 学院：XXX" HorizontalAlignment="Left" Margin="0,49.667,0,0" VerticalAlignment="Top" Width="500" Height="40" FontSize="20" FontWeight="Bold" Grid.Row="1"/>
-        <Label Content="简介" HorizontalAlignment="Left" Margin="10,10.667,0,0" Grid.Row="2" VerticalAlignment="Top" Height="25" Width="34"/>
-        <Label Content="XXXXXXXXXXXXXXX" HorizontalAlignment="Left" Height="50" Margin="223,19.667,0,0" Grid.Row="2" VerticalAlignment="Top" Width="442"/>
-        <Label Content="题目背景&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,72.667,0,0" Grid.Row="2" VerticalAlignment="Top" Height="40" Width="58"/>
-        <Label Content="XXXXXXXXXXXXXXX" HorizontalAlignment="Left" Height="50" Margin="223,94.667,0,0" Grid.Row="2" VerticalAlignment="Top" Width="442"/>
-        <Label Content="具体要求" HorizontalAlignment="Left" Margin="10,138.667,0,0" Grid.Row="2" VerticalAlignment="Top" Height="25" Width="58"/>
-        <Label Content="XXXXXXXXXXXXXXX" HorizontalAlignment="Left" Height="50" Margin="223,169.667,0,0" Grid.Row="2" VerticalAlignment="Top" Width="442"/>
+        <Label Content="指导老师：XXX 学院：XXX" HorizontalAlignment="Left" Margin="0,49.8,0,0" VerticalAlignment="Top" Width="500" Height="40" FontSize="20" FontWeight="Bold" Grid.Row="1" Grid.RowSpan="2"/>
+        <Label Content="简介" HorizontalAlignment="Left" Margin="10,10.2,0,0" Grid.Row="2" VerticalAlignment="Top" Height="36" Width="58" FontSize="20" FontWeight="Bold"/>
+        <Label Content="XXXXXXXXXXXXXXX" HorizontalAlignment="Left" Height="50" Margin="151,10.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="442"/>
+        <Label Content="题目背景&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,72.2,0,0" Grid.Row="2" VerticalAlignment="Top" Height="39" Width="99" FontSize="20" FontWeight="Bold"/>
+        <Label Content="XXXXXXXXXXXXXXX" HorizontalAlignment="Left" Height="50" Margin="151,65.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="442"/>
+        <Label Content="具体要求" HorizontalAlignment="Left" Margin="10,138.2,0,0" Grid.Row="2" VerticalAlignment="Top" Height="36" Width="99" FontSize="20" FontWeight="Bold"/>
+        <Label Content="XXXXXXXXXXXXXXX" HorizontalAlignment="Left" Height="50" Margin="151,138.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="442"/>
 
 
-        <TextBox HorizontalAlignment="Left" Height="79" Margin="99,46,0,0" Grid.Row="3" TextWrapping="Wrap" Text="XXHUJKJFK" VerticalAlignment="Top" Width="424" />
-        <Button Content="驳回" HorizontalAlignment="Left" Margin="572,133,0,0" Grid.Row="3" VerticalAlignment="Top" Width="75" Background="#FF3E3E40" Height="19"/>
-        <Button Content="同意" HorizontalAlignment="Left" Margin="707,133,0,0" Grid.Row="3" VerticalAlignment="Top" Width="75" Background="#FF66CCFF " Height="19"/>
+        <TextBox HorizontalAlignment="Left" Height="79" Margin="151,36.6,0,0" Grid.Row="3" TextWrapping="Wrap" Text="XXHUJKJFK" VerticalAlignment="Top" Width="424" />
+        <Button Content="驳回" HorizontalAlignment="Left" Margin="201,166.6,0,0" Grid.Row="3" VerticalAlignment="Top" Width="93" Background="#FF252543" Height="32" FontSize="20" Foreground="#FF66CCFF "/>
+        <Button Content="同意" HorizontalAlignment="Left" Foreground="White"  Margin="457,166.6,0,0" Grid.Row="3" VerticalAlignment="Top" Width="93" Background="#FF66CCFF " Height="32" FontSize="20"/>
+        <Label Content="意见和理由：" HorizontalAlignment="Left" Margin="17,24.6,0,0" Grid.Row="3" VerticalAlignment="Top" Height="44" Width="117" RenderTransformOrigin="0.584,6.045" FontSize="20" FontWeight="Bold"/>
 
     </Grid>
 </Page>

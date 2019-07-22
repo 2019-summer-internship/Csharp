@@ -9,14 +9,15 @@
       Title="Teacher_Mail">
 
     <Grid>
-        <Grid Background="Black">
+        <Grid Background="#FF252543">
             <Grid.RowDefinitions>
                 <RowDefinition Height="19*"/>
                 <RowDefinition Height="161*"/>
             </Grid.RowDefinitions>
             <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="661" Margin="1,1,-5,-18" Grid.Row="1" VerticalAlignment="Top" Width="834"/>
-            <TextBox x:Name="textBox" BorderThickness="0"  HorizontalAlignment="Left" Height="40" Margin="33,24,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="382"/>
             <Border BorderBrush="#FF66CCFF" BorderThickness="3" HorizontalAlignment="Left" Height="56" Margin="21,14,0,0" VerticalAlignment="Top" Width="430" CornerRadius="20" Background="#FF00000C"/>
+            <TextBox x:Name="textBox"  Background="Black" BorderThickness="0"  HorizontalAlignment="Left" Height="40" Margin="33,24,0,0" TextWrapping="Wrap" Text="内容" VerticalAlignment="Top" Width="382" Foreground="#FF66CCFF " FontSize="24" />
+
             <Button x:Name="button" Content="搜索"  Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="40" Margin="596,26,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.623,-0.2" Background="#FF000106" FontSize="24"/>
             <Border BorderBrush="#FF66CCFF" BorderThickness="3" HorizontalAlignment="Left" Margin="593,16,0,0" Width="62" Height="56" VerticalAlignment="Top" CornerRadius="10"/>
 

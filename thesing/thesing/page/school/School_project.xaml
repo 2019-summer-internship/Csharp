@@ -8,14 +8,14 @@
       d:DesignHeight="720" d:DesignWidth="830"
       Title="School_project" Background="White">
 
-    <Grid Background="DarkGray">
+    <Grid Background="#FF252543">
         <Border BorderBrush="Gray" Background="White" BorderThickness="0" HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" VerticalAlignment="Top" Width="520" CornerRadius="18">
             <TextBox x:Name="school_search_key" BorderThickness="0" Background="{x:Null}" Padding="10,0,10,0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="内容" VerticalAlignment="Center" Width="520" FontSize="24"/>
         </Border>
         <Border BorderBrush="Gray" Background="White" BorderThickness="0" HorizontalAlignment="Left" Height="36" Margin="545,10,0,0" VerticalAlignment="Top" Width="150" CornerRadius="18">
             <TextBox x:Name="school_search_type" BorderThickness="0" Background="{x:Null}" Padding="10,0,10,0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="关键字" VerticalAlignment="Center" Width="150" FontSize="20"/>
         </Border>
-        <Button x:Name="login" HorizontalAlignment="right" VerticalContentAlignment="Top" Margin="0,10,20,674" Content="搜索" Height="36" Width="100" Background="{x:Null}" Foreground="White" FontSize="20" FontWeight="Bold">
+        <Button x:Name="login" HorizontalAlignment="right" VerticalContentAlignment="Top" Margin="0,10,20,674" Content="搜索" Height="36" Width="100" Background="Black" Foreground="White" FontSize="20" FontWeight="Bold">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border BorderBrush="#ccccff" BorderThickness="0" CornerRadius="18" Background="#33CCFF">
@@ -39,10 +39,10 @@
                                 <RectangleGeometry RadiusX="50" RadiusY="50" Rect="0,0,100,100"/>
                             </Image.Clip>
                         </Image>
-                        <TextBlock x:Name="projectName" Text="{Binding Path=projectname}" Margin="160,20,100,50" Height="50"   FontSize="20" FontWeight="Bold"/>
+                        <TextBlock x:Name="projectName" Text="{Binding Path=projectname}" Margin="160,30,100,50" Height="50"   FontSize="20" FontWeight="Bold"/>
 
                         <TextBlock x:Name="teacherName" Text="{Binding Path=teachername}" Margin="300,20,100,50" Height="50"  FontSize="20" FontWeight="Bold"/>
-                        <TextBlock x:Name="areaname" Text="{Binding Path=area}" Margin="160,60,50,20" Height="50"  FontSize="10" FontWeight="Bold"/>
+                        <TextBlock x:Name="areaname" Text="{Binding Path=area}" Margin="160,200,50,0" Height="50"  FontSize="10" FontWeight="Bold"/>
                         <TextBlock x:Name="statument" Text="{Binding Path=statu}" Margin="600,60,100,20" Height="50"  FontSize="25" FontWeight="Bold"/>
                         <!-- 这里将text的内容绑定到SchoolInfo中的name数据成员 -->
 

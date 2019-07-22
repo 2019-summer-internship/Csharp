@@ -8,14 +8,14 @@
       d:DesignHeight="720" d:DesignWidth="830"
       Title="School_teacher" Background="#FFF6F6F6">
 
-    <Grid Background="DarkGray">
-        <Border BorderBrush="Gray" Background="White" BorderThickness="0" HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" VerticalAlignment="Top" Width="520" CornerRadius="18">
+    <Grid Background="#FF252543">
+        <Border BorderBrush="Gray" Background="White" BorderThickness="0" HorizontalAlignment="Left" Height="36" Margin="10,22,0,0" VerticalAlignment="Top" Width="520" CornerRadius="18">
             <TextBox x:Name="school_search_key" BorderThickness="0" Background="{x:Null}" Padding="10,0,10,0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="内容" VerticalAlignment="Center" Width="520" FontSize="24"/>
         </Border>
-        <Border BorderBrush="Gray" Background="White" BorderThickness="0" HorizontalAlignment="Left" Height="36" Margin="545,10,0,0" VerticalAlignment="Top" Width="150" CornerRadius="18">
-            <TextBox x:Name="school_search_type" BorderThickness="0" Background="{x:Null}" Padding="10,0,10,0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="关键字" VerticalAlignment="Center" Width="150" FontSize="20"/>
+        <Border BorderBrush="Gray" Background="White" BorderThickness="0" HorizontalAlignment="Left" Height="36" Margin="545,22,0,0" VerticalAlignment="Top" Width="150" CornerRadius="18">
+            <TextBox x:Name="school_search_type" BorderThickness="0" Background="{x:Null}" Padding="10,0,10,0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="关键字" VerticalAlignment="Center" Width="150" FontSize="20" Margin="0,0,0,9.2"/>
         </Border>
-        <Button x:Name="login" HorizontalAlignment="right" VerticalContentAlignment="Top" Margin="0,10,20,674" Content="搜索" Height="36" Width="100" Background="{x:Null}" Foreground="White" FontSize="20" FontWeight="Bold">
+        <Button x:Name="login" HorizontalAlignment="right" VerticalContentAlignment="Top" Margin="0,22,10,634.4" Content="搜索" Width="102" Background="White" Foreground="White" FontSize="20" FontWeight="Bold">
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
                     <Border BorderBrush="#ccccff" BorderThickness="0" CornerRadius="18" Background="#33CCFF">
@@ -27,7 +27,7 @@
 
         <!-- 下面是列表 -->
         <!-- 直接把ItemSource绑定到.cs中的变量allSchoolInfo，这里写了就不用去代码里写绑定了，你说开发这个的程序员是多懒啊！！ -->
-        <ListBox ItemsSource="{Binding Path=allSchoolInfo}" HorizontalAlignment="Left" BorderThickness="0" Height="660" Margin="0,60,0,0" VerticalAlignment="Top" Width="830">
+        <ListBox ItemsSource="{Binding Path=allSchoolInfo}" HorizontalAlignment="Left" BorderThickness="0" Height="630" Margin="0,90,0,0" VerticalAlignment="Top" Width="830">
             <!-- 下面写的是每一个Item的布局模板，给每个item都套一个相同的绿帽子 -->
             <ListBox.ItemTemplate>
                 <DataTemplate DataType="local:schoolInfo">
@@ -39,10 +39,10 @@
                                 <RectangleGeometry RadiusX="50" RadiusY="50" Rect="0,0,100,100"/>
                             </Image.Clip>
                         </Image>
-                        <TextBlock x:Name="teacherName" Text="{Binding Path=name}" Margin="160,20,100,50" Height="50"   FontSize="20" FontWeight="Bold"/>
+                        <TextBlock x:Name="teacherName" Text="{Binding Path=name}" Margin="160,10,100,50" Height="50"   FontSize="20" FontWeight="Bold"/>
 
-                        <TextBlock x:Name="titleName" Text="{Binding Path=title}" Margin="300,20,100,50" Height="50"  FontSize="20" FontWeight="Bold"/>
-                        <TextBlock x:Name="areaname" Text="{Binding Path=area}" Margin="160,60,50,20" Height="50"  FontSize="10" FontWeight="Bold"/>
+                        <TextBlock x:Name="titleName" Text="{Binding Path=title}" Margin="160,40,100,50" Height="50"  FontSize="20" FontWeight="Bold"/>
+                        <TextBlock x:Name="areaname" Text="{Binding Path=area}" Margin="160,80,50,20" Height="50"  FontSize="10" FontWeight="Bold"/>
                         <TextBlock x:Name="accountname" Text="{Binding Path=account}" Margin="600,60,100,20" Height="50"  FontSize="25" FontWeight="Bold"/>
                         <!-- 这里将text的内容绑定到SchoolInfo中的name数据成员 -->
 

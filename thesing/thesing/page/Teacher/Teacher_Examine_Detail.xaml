@@ -9,13 +9,13 @@
       Title="Teacher_JudgeMyStudents">
 
     <Grid>
-        <Grid Background="Black">
+        <Grid Background="#FF252543">
             <Grid.RowDefinitions>
                 <RowDefinition Height="13*"/>
                 <RowDefinition Height="131*"/>
             </Grid.RowDefinitions>
             <TextBlock x:Name="textBlock" Foreground="#FF66CCFF" HorizontalAlignment="Left" Margin="21,22,0,12.333" TextWrapping="Wrap" Text="评阅-我的学生" Width="197" FontSize="24"/>
-            <Rectangle Fill="#FF00000C" HorizontalAlignment="Left" Height="649" Margin="-1,4.667,-3,0" Stroke="Black" VerticalAlignment="Top" Width="834" Grid.Row="1"/>
+            <Rectangle Fill="##FF252543" HorizontalAlignment="Left" Height="649" Margin="-1,4.667,-3,0" Stroke="Black" VerticalAlignment="Top" Width="834" Grid.Row="1"/>
             <TextBlock x:Name="textBlock1" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="42" Margin="53,85.667,0,0" Grid.Row="1" TextWrapping="Wrap" Text="题目名称" VerticalAlignment="Top" Width="112" FontSize="24"/>
             <Button x:Name="button" Content="提交" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="46" Margin="687,583.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="114"/>
             <TextBlock x:Name="textBlock2" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="36" Margin="219,83.667,0,0" Grid.Row="1" TextWrapping="Wrap" Text="基于数据仓库的高校教务支持系统的建设" VerticalAlignment="Top" Width="454" FontSize="24"/>

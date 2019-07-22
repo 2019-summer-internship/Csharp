@@ -8,21 +8,21 @@
       d:DesignHeight="720" d:DesignWidth="830"
       Title="Student_grade">
 
-    <Grid Background="Black">
+    <Grid Background="#FF252543">
         <Grid.RowDefinitions>
-            <RowDefinition Height="59*"/>
-            <RowDefinition Height="172*"/>
-            <RowDefinition Height="56*"/>
-            <RowDefinition Height="172*"/>
-            <RowDefinition Height="59*"/>
-            <RowDefinition Height="202*"/>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="175*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="155*"/>
+            <RowDefinition Height="54*"/>
+            <RowDefinition Height="240*"/>
         </Grid.RowDefinitions>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="169" Margin="4,2.333,-2,0" Grid.Row="1" VerticalAlignment="Top" Width="828"/>
-        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="172" Margin="4,55.333,-7,0" Grid.Row="2" Grid.RowSpan="2" VerticalAlignment="Top" Width="833"/>
-        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="199" Margin="4,2,0,0" Grid.Row="5" VerticalAlignment="Top" Width="821"/>
-        <TextBlock x:Name="textBlock" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="31" Margin="38,18,0,0" TextWrapping="Wrap" Text="前期成绩" VerticalAlignment="Top" Width="125" FontSize="24"/>
-        <TextBlock x:Name="textBlock1" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="36" Margin="23,9.333,0,0" Grid.Row="2" TextWrapping="Wrap" Text="中期成绩" VerticalAlignment="Top" Width="121" FontSize="24"/>
-        <TextBlock x:Name="textBlock2" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="44" Margin="16,16.333,0,0" Grid.Row="4" TextWrapping="Wrap" Text="最终成绩" VerticalAlignment="Top" Width="112" FontSize="24" Grid.RowSpan="2" RenderTransformOrigin="0.585,0.526"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="169" Margin="4,1.8,-1.6,0" Grid.Row="1" VerticalAlignment="Top" Width="828"/>
+        <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="151" Margin="0,3.8,-6.6,0" Grid.Row="3" VerticalAlignment="Top" Width="837"/>
+        <ListBox x:Name="listBox2" HorizontalAlignment="Left" Height="252" Margin="0,3,0,-15" Grid.Row="5" VerticalAlignment="Top" Width="825"/>
+        <TextBlock x:Name="textBlock" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="31" Margin="23,10,0,0" TextWrapping="Wrap" Text="前期成绩" VerticalAlignment="Top" Width="125" FontSize="24"/>
+        <TextBlock x:Name="textBlock1" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="36" Margin="23,1.6,0,0" Grid.Row="2" TextWrapping="Wrap" Text="中期成绩" VerticalAlignment="Top" Width="121" FontSize="24"/>
+        <TextBlock x:Name="textBlock2" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="44" Margin="16,14.6,0,0" Grid.Row="4" TextWrapping="Wrap" Text="最终成绩" VerticalAlignment="Top" Width="112" FontSize="24" RenderTransformOrigin="0.585,0.526" Grid.RowSpan="2"/>
 
 
     </Grid>

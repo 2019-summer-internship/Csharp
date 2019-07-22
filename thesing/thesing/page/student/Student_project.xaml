@@ -14,21 +14,21 @@
             <RowDefinition Height="94*"/>
             <RowDefinition Height="67*"/>
         </Grid.RowDefinitions>
-        <Grid Background="Black" Grid.RowSpan="3">
+        <Grid Background="#FF252543" Grid.RowSpan="3">
             <Grid.RowDefinitions>
                 <RowDefinition Height="86*"/>
-                <RowDefinition Height="375*"/>
-                <RowDefinition Height="259*"/>
+                <RowDefinition Height="313*"/>
+                <RowDefinition Height="321*"/>
             </Grid.RowDefinitions>
             <Border BorderBrush="#FF66CCFF" BorderThickness="3" HorizontalAlignment="Left" Height="56" Margin="33,56.6,0,0" VerticalAlignment="Top" Width="430" CornerRadius="20" Background="#FF00000C" Grid.Row="1"/>
-            <ComboBox x:Name="comboBox" Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="38" Margin="511,22,0,0" VerticalAlignment="Top" Width="136"/>
+            <ComboBox x:Name="comboBox" Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="32" Margin="524,22,0,0" VerticalAlignment="Top" Width="123"/>
             <Button x:Name="button" Content="搜索"  Foreground="#FF66CCFF" BorderThickness="0" HorizontalAlignment="Left" Height="40" Margin="696,26,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.623,-0.2" Background="#FF000106" FontSize="24"/>
-            <Border BorderBrush="Gray" Margin="10,32,390.4,16" BorderThickness="1" CornerRadius="14" Width=" 430" Height="28" Padding="0" Background="White">
-                <TextBox x:Name="account" BorderThickness="0" Background="Transparent" FontSize="18" Padding="8,0,0,0" VerticalAlignment="Center" Margin="0,-1,-0.6,4"/>
+            <Border BorderBrush="Gray" Margin="25,26,375.4,32.4" BorderThickness="1" CornerRadius="14" Padding="0" Background="White">
+                <TextBox x:Name="account" BorderThickness="0" Background="Transparent" FontSize="18" Padding="8,0,0,0" VerticalAlignment="Center" Height="26" Margin="9,-6,-9.6,9"/>
             </Border>
-            <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="379" Margin="1,81,0,0" VerticalAlignment="Top" Width="826" Grid.RowSpan="2"/>
-            <TextBlock x:Name="textblock" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="35" Margin="25,15.333,0,0" Grid.Row="2" TextWrapping="Wrap" Text="我的题目" VerticalAlignment="Top" Width="123" FontSize="24"/>
-            <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="201" Margin="-11,55.333,-2,0" Grid.Row="2" VerticalAlignment="Top" Width="843"/>
+            <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="313" Margin="0,86,0,0" VerticalAlignment="Top" Width="830" Grid.RowSpan="2"/>
+            <TextBlock x:Name="textblock" Foreground="#FF66CCFF" HorizontalAlignment="Left" Height="35" Margin="25,11.8,0,0" Grid.Row="2" TextWrapping="Wrap" Text="我的题目" VerticalAlignment="Top" Width="123" FontSize="24"/>
+            <ListBox x:Name="listBox1" HorizontalAlignment="Left" Height="259" Margin="0,51.8,0,0" Grid.Row="2" VerticalAlignment="Top" Width="830"/>
 
         </Grid>
 

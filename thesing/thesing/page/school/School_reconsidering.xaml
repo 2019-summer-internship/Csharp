@@ -8,7 +8,7 @@
       d:DesignHeight="720" d:DesignWidth="830"
       Title="School_reconsidering">
 
-    <Grid Background="DarkGray">
+    <Grid Background="#FF252543">
         <Border BorderBrush="Gray" Background="White" BorderThickness="0" HorizontalAlignment="Left" Height="36" Margin="10,10,0,0" VerticalAlignment="Top" Width="520" CornerRadius="18">
             <TextBox x:Name="school_search_key" BorderThickness="0" Background="{x:Null}" Padding="10,0,10,0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="内容" VerticalAlignment="Center" Width="520" FontSize="24"/>
         </Border>

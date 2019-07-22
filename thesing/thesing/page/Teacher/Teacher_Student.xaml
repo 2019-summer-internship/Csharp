@@ -8,7 +8,7 @@
       d:DesignHeight="720" d:DesignWidth="830"
       Title="Teacher_MyStudents">
 
-    <Grid Margin="0,0,2,19" Background="Black">
+    <Grid Margin="0,0,2,19" Background="#FF252543">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="8*"/>

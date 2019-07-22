@@ -6,30 +6,30 @@
       xmlns:local="clr-namespace:thesing.page.school"
       mc:Ignorable="d" 
       d:DesignHeight="720" d:DesignWidth="830"
-      Title="School_Achievement" Background="#FFFDFAFA">
+      Title="School_Achievement" Background="White">
 
-    <Grid Background="Black">
+    <Grid Background="White">
         <Grid.RowDefinitions>
-            <RowDefinition Height="31*"/>
-            <RowDefinition Height="209*"/>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="281*"/>
         </Grid.RowDefinitions>
         <Image HorizontalAlignment="Left" Height="71" Margin="10,10,0,0" VerticalAlignment="Top" Width="83" Source="/source/image/people.ico" OpacityMask="#FF121415"/>
-        <Label Content="2019-7-20" HorizontalAlignment="Left" Margin="195,10,0,0" VerticalAlignment="Top" Width="312" Height="25"/>
-        <Label HorizontalAlignment="Left" Margin="29,22.667,0,0" Grid.Row="1" VerticalAlignment="Top" Height="46" Width="80">
-            <Label Content="提出者" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Background="#FF66CCFF"/>
+        <Label Content="2019-7-20" HorizontalAlignment="Left" Margin="499,107,0,0" VerticalAlignment="Top" Width="321" Height="47" FontSize="16"/>
+        <Label HorizontalAlignment="Left" Margin="29,25.6,0,0" Grid.Row="1" VerticalAlignment="Top" Height="46" Width="80">
+            <Label Content="提出者" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
         </Label>
-        <Label Content="质疑项" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,91.667,0,0" Grid.Row="1" FontSize="20" Background="#FF66CCFF" Height="36" Width="69"/>
-        <Label HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35,155,0,0" Grid.Row="1" Width="56" Height="50">
-            <Label Content="提出者" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="46" FontSize="20" Background="#FF66CCFF" RenderTransformOrigin="1.174,1.064"/>
+        <Label Content="质疑项" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,94.6,0,0" Grid.Row="1" FontSize="20" Height="36" Width="69" FontWeight="Bold"/>
+        <Label HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35,158.6,0,0" Grid.Row="1" Width="56" Height="50">
+            <Label Content="提出者" HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="46" FontSize="20" RenderTransformOrigin="1.174,1.064" FontWeight="Bold"/>
         </Label>
-        <Label Content="提出者" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="43,250.667,0,0" Grid.Row="1" FontSize="20" Background="#FF66CCFF" Height="35" Width="69"/>
-        <Button Content="同意" HorizontalAlignment="Left" Margin="172,473.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" FontSize="20" Background="#FF66CCFF" Height="29"/>
-        <Button Content="驳回" HorizontalAlignment="Left" Margin="507,473.667,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFCCCCFF" FontSize="20" Height="29"/>
-        <TextBlock HorizontalAlignment="Left" Background="White" Margin="168,19.667,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="60" FontSize="20" Text="刚发过给发货过郭德纲GDGAFBVBBAGWF"/>
-        <TextBlock HorizontalAlignment="Left" Background="White" Margin="169,92.667,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="60" FontSize="20" Text="刚发过给发货过郭德纲GDGAFBVBBAGWF"/>
-        <TextBlock HorizontalAlignment="Left" Background="White" Margin="169,160.667,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="60" FontSize="20" Text="刚发过给发货过郭德纲GDGAFBVBBAGWF"/>
-        <TextBlock HorizontalAlignment="Left" Background="White" Margin="173,241.667,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="60" FontSize="20" Text="刚发过给发货过郭德纲GDGAFBVBBAGWF" RenderTransformOrigin="0.511,0.895"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="49" Margin="308,28,0,0"  Foreground="#FF66CCFF " TextWrapping="Wrap" Text="成绩复议" VerticalAlignment="Top" Width="325" FontSize="36"/>
+        <Label Content="提出者" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="43,253.6,0,0" Grid.Row="1" FontSize="20" Height="35" Width="69" FontWeight="Bold"/>
+        <Button Content="同意" HorizontalAlignment="Left" Margin="499,445.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" FontSize="20" Background="#FF66CCFF" Height="29" Click="Button_Click"/>
+        <Button Content="驳回" HorizontalAlignment="Left" Margin="202,445.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFCCCCFF" FontSize="20" Height="29" RenderTransformOrigin="-0.08,-0.222"/>
+        <TextBlock HorizontalAlignment="Left" Background="White" Margin="236,25.6,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="60" FontSize="20" Text="刚发过给发货过郭德纲GDGAFBVBBAGWF"/>
+        <TextBlock HorizontalAlignment="Left" Background="White" Margin="236,94.6,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="60" FontSize="20" Text="刚发过给发货过郭德纲GDGAFBVBBAGWF"/>
+        <TextBlock HorizontalAlignment="Left" Background="White" Margin="236,179.6,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="60" FontSize="20" Text="刚发过给发货过郭德纲GDGAFBVBBAGWF"/>
+        <TextBlock HorizontalAlignment="Left" Background="White" Margin="236,268.6,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Height="60" FontSize="20" Text="刚发过给发货过郭德纲GDGAFBVBBAGWF" RenderTransformOrigin="0.511,0.895"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="59" Margin="236,65,0,0" TextWrapping="Wrap" Text="成绩复议" VerticalAlignment="Top" Width="338" FontSize="36" FontStyle="Italic"/>
 
     </Grid>
 </Page>

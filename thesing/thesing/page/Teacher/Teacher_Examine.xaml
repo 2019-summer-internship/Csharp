@@ -9,7 +9,7 @@
       Title="Teacher_Judge">
 
     <Grid>
-        <Grid Background="Black" >
+        <Grid Background="#FF252543" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="337*"/>
                 <RowDefinition Height="383*"/>
